@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+     
+    <script>
+         
+
+        var qp1 = "data:image/gif;base64,R0lGODdh",
+            qp2 = "APEAAHt7e729vf///wAAACwAAAAA",
+            qp3 = "EAAQ" + qp2 + "EAAQAAAC",
+            qp4 = "AAACwAAAAAEAAQAAAC",
+            qp5 = "DQAXAPEAAAAAAHsAAP8AAAAAACwAAAAADQAXAAAC";
+        var ntck = qp1 + "CgAKAPAAAL29vQAAACwAAAAACgAKAAACCISPqcvtD2MrADs=";
+
+        function insnc(t) {
+            document.write('<img src="' + ntck + '" width="10" height="10" border="0" name="' + t + '">');
+        }
+        timeDigits = new Array(10);
+        for (var i = 0; i < 10; i++) timeDigits[i] = new Image(23, 13);
+        timeDigits[0].src = qp1 + qp5 + "OYSPKct8ApqDEcpqHNL6rfxtYQdSZGVSimkEgOtGCPzWT1vHaQKWa6ryoX5CD5CIuYxQDVlJEuQlCgA7";
+        timeDigits[1].src = qp1 + qp5 + "N4SPCbHN95g0ApoJRHVJ79ZpF3h4VrhhpTgqbMRlyKSCNHWG47N+fL9D5YAxog30Cj4+nJpCUQAAOw==";
+        timeDigits[2].src = qp1 + qp5 + "PISPKct8AZoTLzZrIEQuJ0sBmrJUZDhypfetkFSGIHxQMLWtyQbuotFB8IKenM7UE/4wkmVk5hjeZJ9PAQA7";
+        timeDigits[3].src = qp1 + qp5 + "OYSPKct8AZoTLzZrIEQuJ0sBmrJUZDhypfetkFSGIFzBlLyRXm50Yuv6qXBAlPDge12CtgjSJvt8CgA7";
+        timeDigits[4].src = qp1 + qp5 + "PISPCbHNJwybJgJh6bXYQlyBSBd65TmKZMqZX7V1oCfXB1PPt7JJDbtLrDQfzwPoEIp+GtGD8jBBfzxeAQA7";
+        timeDigits[5].src = qp1 + qp5 + "OYSPKct8ApoLZsUGaLWIapdoF9RlG1meoXklhghJFixzZh0dIsJ5ir1TmYIgFq9nFN4wSByqZnO5CgA7";
+        timeDigits[6].src = qp1 + qp5 + "OYSPKct8ApoLZsUGaLWIapdoF9RlG1meoXklhghJFixz0YiRNsKBT78bqXhA1NB3jOV0OAeqFnQhCgA7";
+        timeDigits[7].src = qp1 + qp5 + "OYSPKct8AZoTLzZrIEQuJ0sBmrJUZDhypfet27iFHoy84h2Z5HzqR5f6rXAqFNHQwaVcvFjtFvxICwA7";
+        timeDigits[8].src = qp1 + "DQAXAPAAAAAAAP8AACwAAAAADQAXAAACNISPGct8AZqDEcpqHNL6rfxtYQdSZGVSiok2kSeFb2yBiY2uqVr24q7zwWyXUWsCi92WhgIAOw==";
+        timeDigits[9].src = qp1 + qp5 + "OoSPKct8ApqDEcpqHNL6rfxtYQdSZGVSiok2kSeFQNBOB51g8y6qeG+g/Uq3nEa48tV0tJgFFstJDQUAOw==";
+        timeNeg = new Image(23, 13);
+        timeNeg.src = qp1 + qp5 + "MoSPCbHN95g0rzkKba4VcY19ytdd2JgJ6ipo7Ju+rZiQtVae5pah4S2a4H4RzyWnQBQAADs=";
+        movesDigits0 = new Image(23, 13);
+        movesDigits0.src = qp1 + "DQAXAPEAAAAAAACAgAD//wAAACwAAAAADQAXAAACOYSPKct8ApqDEcpqHNL6rfxtYQdSZGVSimkEgOtGCPzWT1vHaQKWa6ryoX5CD5CIuYxQDVlJEuQlCgA7";
+        cellOpenIm = new Array(9);
+        for (var i = 0; i < 9; i++) cellOpenIm[i] = new Image(16, 16);
+        cellOpenIm[0].src = qp1 + "EAAQAPAAAHt7e729vSwAAAAAEAAQAAACHYSPacHtD550cc5qYZZ4s+6Bm5iRlnl5lNqgHMsUADs=";
+        cellOpenIm[1].src = qp1 + "EAAQAPEAAAAA/3t7e729vQ" + qp4 + "KYyPacLtH550UQIgq7sYPt5RG5hZV/mdXho2WsOhDBi7Iy1O06vb/VMAADs=";
+        cellOpenIm[2].src = qp1 + "EAAQAPEAAAB7AHt7e729vQ" + qp4 + "LYyPacLtH550kYGLL7W5t4o5IVNNo1CKJ/p4G7d+MDCRc0fbAp7JtZT66YSNAgA7";
+        cellOpenIm[3].src = qp1 + "EAAQAPEAAHt7e729vf8AAA" + qp4 + "LISPacHtD550MYiLMWW5i1ZNGhNKY1Ba3eZ4rHiBExeTtFejtyvPUurTBR0FADs=";
+        cellOpenIm[4].src = qp1 + "EAAQAPEAAAAAe3t7e729vQ" + qp4 + "LoyPacLtH550sYErLqBOZ9xU3zZyjFeGp8aCQtW26oQy4lO/U2rv+b2bBU3DRgEAOw==";
+        cellOpenIm[5].src = qp1 + "EAAQAPEAAHsAAHt7e729vQ" + qp4 + "KYyPacLtH550UYCLc6u5g81gE2hdI8N5JqmK6OkK1RSnLXuTJ7VDvVMAADs=";
+        cellOpenIm[6].src = qp1 + "EAAQAPEAAAB7e3t7e729vQ" + qp4 + "LIyPacLtH550kYGLL7U5b4FNTRWKAtmVDJpqKwc4Kiu7J9yOTRvrJvQDBhsFADs=";
+        cellOpenIm[7].src = qp1 + "EAAQAPEAAAAAAHt7e729vQ" + qp4 + "KoyPacLtH550UYCLc6u5gz0xGBiOTCWZZ3lRk7qmrfvAsWMLaEjzvc8oAAA7";
+        cellOpenIm[8].src = qp1 + "EAAQAPAAAHt7e729vSwAAAAAEAAQAAACKYSPacHtD550kanV6j3ZYl8F2id+4UZlV1qGbfeqJ7hacsJOkqvDvVMAADs=";
+        cellShadowIm = new Array(9);
+        for (var i = 0; i < 9; i++) cellShadowIm[i] = new Image(16, 16);
+        cellShadowIm[0].src = qp1 + qp3 + "KpSPGckXYIKcVAIoqn541xt5E5iJVmdyoUmmasmi8Sq2Kchd+q7n/A8oAAA7";
+        cellShadowIm[1].src = qp1 + qp3 + "MpSPGckXYIKcVAIo6gP0xn6Bn3Vxk5eRpZieoTuqbLXCrWy75YvqOxnTADe74sqIvBQAADs=";
+        cellShadowIm[2].src = qp1 + qp3 + "NJSPGckXYIKcVAIo7N1XRw4CDzaK0zZGlSZeKsV52RnLbAeTdeVmYdwr/VKzVc73CwmTmwIAOw==";
+        cellShadowIm[3].src = qp1 + qp3 + "MpSPGckXYIKcVAIo3t3bYs1xWlR5wJiVIEqFJzu5Hll2F13ZnyveGX+ZpVQxCAioQ3IKADs=";
+        cellShadowIm[4].src = qp1 + qp3 + "NJSPGckXYIKcVAIo5gXvWqx52xd1nElm6HpF2zu2GQx3ZTXaKu7p1XeS/VigIaVlotWUzAIAOw==";
+        cellShadowIm[5].src = qp1 + qp3 + "MZSPGckXYIKcVAIo3t1cRw4CXrZV0/VdpoVpoTi6b7yWaFartxzGr0pbnSC8n8gYKgAAOw==";
+        cellShadowIm[6].src = qp1 + qp3 + "MpSPGckXYIKcVAIo7N1XRw562VZN19eVD7aC6Tm6JNxSM0uaHS3fURta/VS6WI8DPF4KADs=";
+        cellShadowIm[7].src = qp1 + qp3 + "MZSPGckXYIKcVAIo3t1cRw4CXlZZ11ia4hWVm9lWLyqfMEnN9KTvao5J1TKh4soYKgAAOw==";
+        cellShadowIm[8].src = qp1 + qp3 + "NJSPGckXYIKcVAIo7N1XRw4CDzaK0zZ+3dldUQl6GczJJYW6GcqKOh37AVfCSsU1DPmUygIAOw==";
+        bombFlagged = new Image(16, 16);
+        bombFlagged.src = qp1 + "EAAPAPIAAAAAAHt7e729vf8AAP///wAAAAAAAAAAACwAAAAAEAAPAAADOUi63NJwiaCEvdgGSvIY2VZZ3xdyZAliYpeaLIrBV5sJwDliebzjgKDPFSwWNTKjEfm7MSebqFSaAAA7";
+        bombDisarmed = new Image(16, 16);
+        bombDisarmed.src = "data:image/gif;base64,R0lGODlhEAAQAPIEAAAAAHsAAHt7e729vf///wAAAAAAAAAAACH5BAUKAAQALAAAAAAQABAAAAIrlI9pw+0vnnTxhTAruzc33knaAHoWJk6A+aypA8Qu1cj2PGi3TE+s3wM6CgA7";
+        bombRevealed = new Image(16, 16);
+        bombRevealed.src = qp1 + "EAAQAPEAAAAAAHt7e729vf///ywAAAAAEAAQAAACNIyPacLtHx4DUkRJ5RUUeM81G/d9zuYNQ5lZTbqWIsnW7lSDDJq3Y3560UC+SiuIqYwqjgIAOw==";
+        bombMisFlagged = new Image(16, 16);
+        bombMisFlagged.src = qp1 + "EAAQAPIAAAAAAHt7e729vf8AAP///wAAAAAAAAAAACwAAAAAEAAQAAADRBi63CowyhkmBFbUMSSOnAaFQFkKoTgOZpmqAsARLhtVl8xyJ1S1OlYLZuIIP0SdEolbFTs30LEWRUFjUp/VIwk1M5MEADs=";
+        bombDeath = new Image(16, 16);
+        bombDeath.src = qp1 + "EAAQAPEAAAAAAHt7e/8AAP///ywAAAAAEAAQAAACNIyPacLtHx4DUkRJ5RUUeM81G/d9zuYNQ5lZTbqWIsnW7lSDDJq3Y3560UC+SiuIqYwqjgIAOw==";
+        bombQuestion = new Image(16, 16);
+        bombQuestion.src = qp1 + "EAAQAPEAAAAAAHt7e729vf///ywAAAAAEAAQAAACOZyPKcknYYScVAY4KNiA3ihtYWdhkyigj1ml5ApqL5zJ1VefM922eKUqxUY3Vm/yWV2WzKWyCQ0UAAA7";
+        bombShadow = new Image(16, 16);
+        bombShadow.src = qp1 + qp3 + "NpSPGckXYIKcYEoAhb0bx/dgGOhplyieX4lWpSq0odHW4mq72WnPZijzcWS6j6VyhABzKWatAAA7";
+        blankCell = new Image(16, 16);
+        blankCell.src = qp1 + qp3 + "KpSPGckXYIKcVAIoqn541xt5E5iJVmdyoUmmasmi8Sq2Kchd+q7n/A8oAAA7";
+        faceDead = new Image(26, 26);
+        faceDead.src = qp1 + "GgAaAPIAAAAAAHt7e729vf//AP///wAAAAAAAAAAACwAAAAAGgAaAAADgBi63M4ikEmrvTNKzK/eQiiOJMlkZVqehAq8b8qW72Db8TiPwO3jugUq1Pv9AKKdoNgrDprAD4h4c+KqoZ0Tet1KUVbj8dtais9I7VmcFpbDsJqvrRhuj1iyiMmOKs1rT0luJGFzQXVlPHBIiFM0cTKEKpRZQlIPmQ2Ymp2cnZoJADs=";
+        faceSmile = new Image(26, 26);
+        faceSmile.src = qp1 + "GgAaAPIAAAAAAHt7e729vf//AP///wAAAAAAAAAAACwAAAAAGgAaAAADfxi63M4ikEmrvTNKzK/eQiiOJMlkZVqehAq8b8qW72Db8TiPwO3jugUq1Pv9AKKdoGg8hpTMGi76FLaWPulAu/2AsM0mcscMZ72oshlIvqlxbvQVvD3G5aIyjIvE59ddVQpDRGZ9gl88ajlJVi57Mo4qk4gtD5eYXpibAZqcmAkAOw==";
+        faceWin = new Image(26, 26);
+        faceWin.src = qp1 + "GgAaAPIAAAAAAHt7AHt7e729vf//AP///wAAAAAAACwAAAAAGgAaAAADhCi63M5DlEmrvTNKzK/eQyiOJMlkZVqehQq8b8qWL2Hb8TiPwO3jugUq1Pv9AKLdoGg8hpRFmLRGQH5AS5y0uq1eUb0wjFsLf1vLYoDKDWjPxKYcuWPKfXQhOos73qxQeF1AcCJ2TVaFhneJioaHOUl6LlIykyqYT0JXD50NnJ6hoKGeCQA7";
+        faceWait = new Image(26, 26);
+        faceWait.src = qp1 + "GgAaAPIAAAAAAHt7e729vf//AP///wAAAAAAAAAAACwAAAAAGgAaAAADgxi63M4ikEmrvTNKzK/eQiiOJMlkZVqehNqk7BoMNK2YCyrONVAPgVFs9xv4fsHQMFI0NpNLntFHPQKVuRazR50iP6Bt0fodSrmAdNoGRp17zas5Tg9G6UVolkhT+2t6CjpidTt7QnhJWIJaQm83jowuEDKSKpeLEmAPnC+dn56gogEJADs=";
+        faceOoh = new Image(26, 26);
+        faceOoh.src = qp1 + "GgAaAPIAAAAAAICAAMDAwP//AICAgP///wAAAAAAACwAAAAAGgAaAAADi0i63M6ClEmrvTNKzK/eQiiOJMlkZVqehQq8b8qW72Db8TiPwO3jugUq1Pv9AKKdoBgABG7N5wD5ARFxNWyRuisOolDnDdk1moHls5EsbC3XWR9bgfLamlPpuDq0e/0hSnZ4Ynt8bldjcVNJbSR2R0F0iCKLU1SNky4wmJJWKqB8VQ+kDaOlqKeopQkAOw==";
+        facePirate = new Image(26, 26);
+        facePirate.src = qp1 + "GgAaAPIAAAAAAHt7e729vf//AP///4CAAAAAAAAAACwAAAAAGgAaAAADhxi63M4ikEmrvTNKzK/eQiiOJMlkZVqehAq8b8qW7zAAdjzOI27fv9tugQr5coWgMMQT+AqvpHLZ9MGsRwCT2HL+rrmjkGeFAqRTLTk6TX9A3nZbzTXK5+9iVpndKvRBV2JaeV12d0uFJGJ8Q3+GIjWBhCJNi1cydSqbfhJvD6ANn6Gko6ShCQA7";
+        checked = new Image(10, 10);
+        checked.src = qp1 + "CgAKAPAAAAAAAL29vSwAAAAACgAKAAACEYyPqcsBDJ6RLh4bac2KL20UADs=";
+        notchecked = new Image(10, 10);
+        notchecked.src = ntck;
+        var bordertl = qp1 + "CgAK" + qp2 + "CgAKAAACFJSPqRLtbd6LErIaaNWSNwB4AVgAADs=",
+            bordertb = qp1 + "BAAK" + qp2 + "BAAKAAACCZRvocvtC6KMBQA7",
+            bordertr = qp1 + "CgAK" + qp2 + "CgAKAAACFZR/gRgQDx9wEc5qKb646Tp9mbIBBQA7",
+            borderlr = qp1 + "CgAE" + qp2 + "CgAEAAACC5SCCWCpfFxYTa4CADs=",
+            borderjointl = qp1 + "CgAK" + qp2 + "CgAKAAACFJSCCWHpdlxqEtF6ZX4RdwVsAQAUADs=",
+            borderjointr = qp1 + "CgAK" + qp2 + "CgAKAAACFJSCCWCp4NyKj6JpMdVxwQ0dHVAAADs=",
+            borderbl = qp1 + "CgAK" + qp2 + "CgAKAAACFZSCCWHpdlxqEtF6ZX4RBwCG4CeKBQA7",
+            borderbr = qp1 + "CgAK" + qp2 + "CgAKAAACE5SCCWCp4NyKj6JpMdVx+Q+GSwEAOw==";
+
+        function getCookie(Name) {
+            var search = Name + "=";
+            if (document.cookie.length > 0) {
+                offset = document.cookie.indexOf(search);
+                if (offset != -1) {
+                    offset += search.length;
+                    end = document.cookie.indexOf(";", offset);
+                    if (end == -1) end = document.cookie.length;
+                    return decodeURI(document.cookie.substring(offset, end));
+                }
+            }
+        }
+
+        function setCookie(name, value) {
+            document.cookie = name + "=" + encodeURI(value) + "; expires=Fri,31 Dec " + (new Date().getFullYear() + 10) + " 23:59:00 GMT";
+        }
+        gameFormat = getCookie("gameFormat");
+        if (gameFormat == "Custom") {
+            maxX = parseInt(getCookie("maxX"));
+            maxY = parseInt(getCookie("maxY"));
+            maxNumBombs = parseInt(getCookie("maxNumBombs"));
+        } else if (gameFormat == "Intermediate") {
+            maxX = 15;
+            maxY = 15;
+            maxNumBombs = 40;
+        } else if (gameFormat == "Expert") {
+            maxX = 30;
+            maxY = 15;
+            maxNumBombs = 99;
+        } else {
+            maxX = 7;
+            maxY = 7;
+            maxNumBombs = 10;
+            gameFormat = "Beginner";
+        }
+        maxLegalBombs = Math.round((maxX + 1) * (maxY + 1) / 3);
+        if (isNaN(maxX) || maxX < 7 || maxX > 31 || isNaN(maxY) || maxY < 7 || maxY > 24 || isNaN(maxNumBombs) || maxNumBombs < 1 || maxNumBombs > maxLegalBombs) {
+            maxX = 7;
+            maxY = 7;
+            maxNumBombs = 10;
+            gameFormat = "Beginner";
+        }
+        setCookie("gameFormat", gameFormat);
+        smileMargin = ((maxX + 1) * 16 - (13 * 6 + 26)) / 2;
+        zoomLevel = Number(getCookie("zoomLevel"));
+        if (!(zoomLevel >= -2 && zoomLevel <= 12)) zoomLevel = 4;
+
+        function zoomPower() {
+            return Math.pow(2, zoomLevel / 4);
+        }
+
+        function gwidth() {
+            return (36 + 16 * maxX) * zoomPower();
+        }
+
+        function gheight() {
+            return (99 + 16 * maxY) * zoomPower();
+        }
+
+        function forceFocus() {
+            document.checkForm.modeCheck.focus();
+        }
+        pointingAtX = -1;
+        pointingAtY = -1;
+
+        function cursorClearLoc(x, y) {
+            if ((pointingAtX == x) && (pointingAtY == y)) {
+                pointingAtX = -1;
+                pointingAtY = -1;
+            }
+        }
+
+        function cursorHoldLoc(x, y) {
+            pointingAtX = x;
+            pointingAtY = y;
+            forceFocus();
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="nl">
+    <meta name="description" content="Speel Mijnenveger gratis online. Simpel en klassiek, met de traditionele looks.">
+    <title>Mijnenveger Online | Speel het klassieke spel gratis </title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <link rel="canonical" href="https://minesweeper.one/mijnenveger/">
+    <style type="text/css">
+        .menu_margin {
+            margin: 5px 0px 5px 0px;
+            width: 148px;
+            text-align: left;
+        }
+
+        .menu_title {
+            font-family: helvetica;
+            font-size: 12px;
+            padding-left: 5px;
+        }
+
+        .menu_dropdown {
+            position: absolute;
+            visibility: hidden;
+            width: 150px;
+            top: 20px;
+            z-index: 5;
+            text-align: left;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: default;
+        }
+
+        a:link,
+        a:visited,
+        a:active {
+            color: #000;
+        }
+
+        a:hover {
+            color: #00C;
+            text-decoration: underline;
+        }
+
+        .menu_item {
+            font-family: helvetica;
+            font-size: 12px;
+        }
+
+        .menu_divider {
+            font-family: helvetica;
+            font-size: 2px;
+        }
+
+        .focus_box {
+            width: 40px;
+            position: absolute;
+            z-index: 2;
+            top: 400px;
+            left: -2000px;
+        }
+
+        .pause {
+            text-align: center;
+            visibility: hidden;
+            color: #fff;
+            background-color: #000;
+            border-style: solid;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .disarm {
+            opacity: 0.9;
+            text-align: center;
+            visibility: hidden;
+            background-color: #DDAA77;
+            border-style: solid;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .disarmCountdown {
+            font-family: Courier;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .disarm input {
+            font-size: 80%;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        body {
+            font-family: Verdana;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .closeb {
+            font-size: 12px;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        #content {
+            width: 728px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body bgcolor="#C0C0C0" onclick="clickInBrowser()">
+    <div class="focus_box">
+        <form name="checkForm"><input type="checkbox" onclick="cellTouch()" name="modeCheck"></form>
+    </div>
+    <div id="toppane">
+    </div>
+    <br>
+    <script>
+        document.write('<div id="container" style="width:' + gwidth() + 'px;height:' + gheight() + 'px;"><div id="gamediv" style="transform-origin:center top;transform:scale(' + zoomPower() + ');">');
+    </script>
+    <div id="divMenuGame" class="menu_dropdown" style="left:10px;">
+        <table border="1" bgcolor="#C0C0C0">
+            <tr>
+                <td class="menu_item" nowrap="nowrap">
+                    <script>
+                        insnc("imNew");
+                    </script>&nbsp;<a onclick="return menuItemClick('New')">Nieuw spel &nbsp; &nbsp; &nbsp; &nbsp;F2</a>&nbsp;<br>
+                    <script>
+                        insnc("imPause");
+                    </script>&nbsp;<a onclick="menuItemClick('Pause')">Pauze &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; P</a>&nbsp;<br>
+                    <hr>
+                    <script>
+                        insnc("imBeginner");
+                    </script>&nbsp;<a onclick="menuItemClick('Beginner')">Beginner</a>&nbsp;<br>
+                    <script>
+                        insnc("imIntermediate");
+                    </script>&nbsp;<a onclick="menuItemClick('Intermediate')">Gevorderde</a>&nbsp;<br>
+                    <script>
+                        insnc("imExpert");
+                    </script>&nbsp;<a onclick="menuItemClick('Expert')">Expert</a>&nbsp;<br>
+                    <script>
+                        insnc("imCustom");
+                    </script>&nbsp;<a onclick="menuItemClick('Custom')">Aangepast</a>&nbsp;<br>
+                    <hr>
+                    <script>
+                        insnc("");
+                    </script>&nbsp;<a onclick="return menuItemClick('Personal')">Persoonlijk record</a>&nbsp;<br>
+                    <hr>
+                    <script>
+                        insnc("");
+                    </script>&nbsp;<a onclick="return menuItemClick('Languages')">Talen</a>&nbsp;<br>
+                    <script>
+                        insnc("");
+                    </script>&nbsp;<a onclick="return menuItemClick('OtherGames')">Andere spellen</a>&nbsp;<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="divMenuOpt" class="menu_dropdown" style="left:53px;">
+        <table border="1" bgcolor="#C0C0C0">
+            <tr>
+                <td class="menu_item" nowrap="nowrap">
+                    <script>
+                        insnc("imZoomIn");
+                    </script>&nbsp;<a onclick="return zoomIn()" title="Zoom werkt op de meeste moderne browsers. ">Zoom in</a><br>
+                    <script>
+                        insnc("imZoomOut");
+                    </script>&nbsp;<a onclick="return zoomOut()" title="Zoom werkt op de meeste moderne browsers. ">Zoom uit</a><br>
+                    <hr>
+                    <a onclick="return menuItemClick('First')" title="De eerste zet opent altijd een aantal handige blokken.">
+                        <script>
+                            insnc("imFirst");
+                        </script>&nbsp;Veilige&nbsp;start</a><br>
+                    <a onclick="return menuItemClick('Marks')" title="Een tweede klik met de rechtermuisknop verandert een vlag in een vraagteken.">
+                        <script>
+                            insnc("imMarks");
+                        </script>&nbsp;Vraagtekens&nbsp;(?)</a><br>
+                    <a onclick="return menuItemClick('Area')" title="Door op een genummerd vierkant te klikken, open je alle buurvakjes. ">
+                        <script>
+                            insnc("imUseMacro");
+                        </script>&nbsp;Veilige&nbsp;buurt</a><br>
+                    <a onclick="return menuItemClick('Remaining')" title="Als er 0 bommen over zijn zonder vlag, klik de bommenteller om alle overige vakjes te openen.">
+                        <script>
+                            insnc("imRemaining");
+                        </script>&nbsp;Open&nbsp;resterende</a>&nbsp;<br>
+                    <a onclick="return menuItemClick('Disarm')" title="Biedt de mogelijkheid om de laatste zet ongedaan te maken. Zal niet tellen als een spel met high score.">
+                        <script>
+                            insnc("imDisarm");
+                        </script>&nbsp;Ontwapen&nbsp;(ongedaan&nbsp;maken)</a>&nbsp;<br>
+                    <a onclick="return menuItemClick('Hints')" title="Laat een hint zien als je naar een vakje wijst en de letter H indrukt.">
+                        <script>
+                            insnc("imHints");
+                        </script>&nbsp;Hints&nbsp;(druk&nbsp;op&nbsp;H)</a>&nbsp;<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="divMenuHelp" class="menu_dropdown" style="left:110px;">
+        <table border="1" bgcolor="#C0C0C0">
+            <tr>
+                <td class="menu_item" nowrap="nowrap">
+                    &nbsp;<a onclick="return menuItemClick('About')">Over Mijnenveger</a>&nbsp;<br>
+                    <hr> &nbsp;
+                    <a onclick="return menuItemClick('Instructions')">Instructies en regels</a>&nbsp;<br> &nbsp;
+                    <a onclick="return menuItemClick('Example')">Oplossingsvoorbeeld</a>&nbsp;<br> &nbsp;
+                    <a onclick="return menuItemClick('History')">Geschiedenis</a><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="divDisarm" class="disarm">
+        <p>Mijn ontploft in<br>
+            <span class="disarmCountdown" id="detonateCountdown">3.0</span><br>
+            <input type="button" onclick="disarmMine();" value="Ontmantel de mijn"><br>
+            <input type="button" onclick="acceptFate();" value="Accepteer je lot">
+        </p>
+    </div>
+    <div id="divPause" class="pause">
+        <p>GEPAUZEERD</p>
+        <p><input type="button" onclick="doUnpause();" value="Hervat"></p>
+    </div>
+    <table id="mainmenu" border="0" cellspacing="0" cellpadding="0" class="menu_margin">
+        <tr>
+            <td class="menu_title"><a onclick="return menuClick('divMenuGame')" onmouseover="return menuMouseOver('divMenuGame')">Spel</a></td>
+            <td class="menu_title"><a onclick="return menuClick('divMenuOpt')" onmouseover="return menuMouseOver('divMenuOpt')">Opties</a></td>
+            <td class="menu_title"><a onclick="return menuClick('divMenuHelp')" onmouseover="return menuMouseOver('divMenuHelp')">Help</a></td>
+        </tr>
+    </table>
+    <div id="divBoard" style="font-size:0px;" oncontextmenu="return false;">
+        <script>
+            document.write('<img src="' + bordertl + '" height="10" width="10" name="bordertl">');
+            for (var j = 0; j <= maxX; j++) document.write('<img src="' + bordertb + '" height="10" width="16">');
+            document.write('<img src="' + bordertr + '" height="10" width="10"><br>');
+            document.write('<img src="' + borderlr + '" height="26" width="10">');
+            document.write('<a onclick="return bombCountClick()"><img src="' + timeDigits[0].src + '" border="0" name="bomb100s" width="13" height="23"><img src="' + timeDigits[0].src + '" border="0" name="bomb10s" width="13" height="23"><img src="' + timeDigits[0].src + '" border="0" name="bomb1s" width="13" height="23"></a>');
+            document.write('<a onclick="return faceClick()"><img src="' + faceWait.src + '" name="face" style="margin-left:' + smileMargin + 'px;margin-right:' + smileMargin + 'px;" border="0" width="26" height="26"></a>');
+            document.write('<img src="' + timeDigits[0].src + '" border="0" name="time100s" width="13" height="23" alt=""><img src="' + timeDigits[0].src + '" border="0" name="time10s" width="13" height="23"><img src="' + timeDigits[0].src + '" border="0" name="time1s" width="13" height="23">');
+            document.write('<img src="' + borderlr + '" height="26" width="10"><br>');
+            document.write('<img src="' + borderjointl + '" height="10" width="10">');
+            for (var j = 0; j <= maxX; j++) {
+                document.write('<img src="' + bordertb + '" height="10" width="16">');
+            }
+            document.write('<img src="' + borderjointr + '" height="10" width="10"><br>');
+            for (var i = 0; i <= maxY; i++) {
+                document.write('<img src="' + borderlr + '" height="16" width="10">');
+                for (var j = 0; j <= maxX; j++) document.write('<a onClick="" onmouseover="cursorHoldLoc(' + j + ',' + i + ')" onmouseout="cursorClearLoc(' + j + ',' + i + ')" ondragstart="ignoreDragging()" ondrag="ignoreDragging()" onmousedown="showMouseDown();" onmouseup="cellClick(' + j + ',' + i + ', event)"><img src="' + blankCell.src + '" name="cellIm' + j + '_' + i + '" border="0" height="16" width="16"></a>');
+                document.write('<img src="' + borderlr + '" border="0" height="16" width="10"><br>');
+            }
+            document.write('<img src="' + borderbl + '" height="10" width="10">');
+            for (var j = 0; j <= maxX; j++) {
+                document.write('<img src="' + bordertb + '" height="10" width="16">');
+            }
+            document.write('<img src="' + borderbr + '" height="10" width="10"><br>');
+        </script>
+    </div>
+    </div>
+    </div>
+    <br>
+    <div id="middlepane">
+    </div>
+    <br>
+    <div id="content">
+        <div id="window1">
+            <h1>Mijnenveger</h1>
+            <p>Welkom bij Mijnenveger, een van de meest populaire logische singleplayer videospellen! Dit is een onlineversie die voor iedereen gratis beschikbaar is. Geniet ervan!</p>
+            <p>Deze Mijnenveger online spel is gemaakt in 2021 en is een aanpassing op het spel, geschreven door <a href="http://www.chezpoor.com/minesweeper/minesweeper.html">Shep Poor</a> en gedistribueerd onder een Creative Commons licentie. Het originele
+                Mijnenveger spel © 1981-1995 Microsoft Corp.</p>
+            <h2>Overzicht</h2>
+            <p>Mijnenveger is een logische puzzel, bestaand uit een bord met vakjes. In het begin is elk vakje afgedekt en de speler weet niet wat er onder zit. Voor de eerste zet, klikt de speler ergens op het bord. Hierdoor zal het vakje worden opengelegd
+                waar de speler op heeft geklikt, samen met de vakjes hiernaast. Sommige van de vakjes zullen nummers in zich hebben. Een nummer toont aan hoeveel mijnen er in de aanliggende vakjes zitten. Het doel is om deze nummers te gebruiken en zo
+                te achterhalen waar de mijnen liggen. Als je achter de locatie van een mijn komt, kan je hier een vlaggetje op plaatsen door op dit vak met je rechtermuisknop te klikken. Terwijl je vlaggen plaatst op de mijnen, zal je achterhalen dat
+                sommige vakjes geen mijnen op zich hebben. Deze kan je veilig open leggen met de linkermuisknop.</p><input type="button" value="Sluiten" onclick="hideallwindows();">
+        </div>
+        <div id="window2">
+            <h2>Instructies en regels</h2>
+            <p>Hier zijn een paar hints die handig kunnen zijn:</p>
+            <ol>
+                <li>Je kan op de gele smiley (of soms verdrietige gezichtje) klikken om het spel te herstarten.</li>
+                <li>Je kan in- en uitzoomen met het Optie-menu.</li>
+                <li>Als je met je linkermuisknop op een vakje met een nummer klikt en de vakjes erom heen hebben hetzelfde aantal vlaggetjes als het nummer waar je net op hebt geklikt, zullen alle andere vakjes ook open worden gelegd. Deze functie wordt <b>Veilige buurt</b>                    genoemd.</li>
+                <li>Het doel van het spel is om alle vakjes die geen mijnen hebben, open te leggen. Je hoeft geen vlaggetjes te plaatsen!</li>
+            </ol>
+            <p>Dit is hoe de opties werken die in het spel mogelijk zijn:</p>
+            <ol>
+                <li><b>Veilige start</b> – na je eerste klik (met deze optie ingeschakeld), zal je altijd een leeg vakje vinden waardoor je een groot gebied open kan leggen. Als je deze optie uit zet, wordt het bord compleet willekeurig opgezet, dus kan je
+                    met de eerste klik al een enkel getal vinden, of zelfs een mijn!</li>
+                <li><b>Vraagteken</b> – met deze optie aan, zal je met de rechtermuisknop een vlag in een vraagteken veranderen. Klik nogmaals om het vraagteken weg te halen. Als deze optie is uitgeschakeld kan je met je rechtermuisknop alleen een vlag plaatsen
+                    of hem weghalen.</li>
+                <li><b>Veilige buurt</b> – met deze optie ingeschakeld kan je op een getal klikken waarbij het aantal mijnen met vlaggen overeenkomt met het nummer op het vakje, om zo de omliggende vakjes open te leggen. Als deze optie uitstaat, zal het klikken
+                    op een cijfer niks uitmaken.</li>
+                <li><b>Open resterende</b> – met deze optie aan, kan je met een klik op het display alle resterende vakjes openleggen nadat je alle mijnen hebt gevonden en er vlaggen op hebt gezet, zodra het nummer van resterende mijnen “000”.</li>
+                <li><b>Ontwapen</b> – als deze optie is ingeschakeld en je op een mijn klikt, zal je drie seconden hebben om jezelf te redden. Als deze optie uit staat, zal je simpelweg meteen doodgaan.</li>
+                <li><b>Hint</b> – met deze optie aan, kan je met je muis boven een vakje gaan staan en op H drukken om te zien wat er onder verscholen zit.</li>
+            </ol><input type="button" value="Sluiten" onclick="hideallwindows();">
+        </div>
+        <div id="window3">
+            <h2>Oplossingsvoorbeeld</h2>
+            <p>Deze korte instructie laat je zien hoe je een spelletje Mijnenveger kan oplossen.</p>
+            <table>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 1" id="img1" src="../board1.png" loading="lazy" width="148" height="184"></td>
+                    <td>In dit voorbeeld beginnen we op beginnersniveau. Het aantal resterende mijnen is linksboven in het digitale display van het Mijnenveger bord te zien. Er staat “10”, wat betekent dat er 10 mijnen op het bord zijn verstopt. Laten we
+                        beginnen door met de linkermuisknop op een willekeurig vakje te klikken. In dit voorbeeld klikken we op het vakje met de rode cirkel.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 2" id="img2" src="../board2.png" loading="lazy" width="148" height="184"></td>
+                    <td>Na onze eerste klik wordt een aantal vakjes opengelegd. Sommige van deze vakjes zullen nummers op zich hebben, andere zijn leeg. Het nummer laat zien hoeveel mijnen er in de vakjes omheen liggen. Zie je het vakje met een “1”, aangeduid
+                        met een rode cirkel? Er grenst nog maar één bedekt vakje aan (aangeduid met een bruine cirkel). En aangezien er maar een aangrenzende mijn is, moet de mijn onder dit vakje liggen. Laten we een vlag op dit vakje plaatsen met de
+                        rechtermuisknop.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 3" id="img3" src="../board3.png" loading="lazy" width="148" height="184"></td>
+                    <td>Nu we de eerste vlag hebben geplant, kunnen we beginnen met het openleggen van meer vakjes. Kijk eens naar het vakje met de “1” en een rode cirkel. We weten dat er maar een mijn in al die drie vakjes daarboven zit, maar we hebben de
+                        mijn al gevonden en aangeduid met een vlag. Dat betekent dat er in de twee andere vakjes (aangeduid met bruine cirkels) geen mijn zit. We kunnen ze met de linkermuisknop veilig openleggen.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 4" id="img4" src="../board4.png" loading="lazy" width="148" height="184"></td>
+                    <td>Nu zijn we klaar om de tweede vlag te plaatsen. Net als daarnet kunnen we een vakje vinden met een “1” (aangegeven met de rode cirkel), waar nog maar een bedekt vakje aan grenst (aangeduid met een bruine cirkel). De mijn moet dus hier
+                        liggen en je kan dus met zekerheid hier een vlag plaatsen door met je rechtermuisknop op dit vakje te klikken.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 5" id="img5" src="../board5.png" loading="lazy" width="148" height="184"></td>
+                    <td>Als je de tweede vlag hebt geplant, zal je nog meer vakjes met een “1” zien, die ook al vlaggetje in de buurt hebben. Twee van deze vakjes zijn aangegeven met rode cirkels. Aangezien ze allebei al een vlag in de buurt hebben staan,
+                        kan er geen mijn onder de andere bedekte vakjes liggen (aangegeven met de bruine cirkels). We kunnen met de linkermuisknop op deze vakjes klikken om ze open te leggen.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 6" id="img6" src="../board6.png" loading="lazy" width="148" height="184"></td>
+                    <td>Nogmaals, er is een vierkantje met een “1” erin, waarvoor de aangrenzende mijn al is gevonden. Laten we met de linkermuisknop op het laatste bedekte vakje klikken (aangegeven met een bruine cirkel).</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 7" id="img7" src="../board7.png" loading="lazy" width="148" height="184"></td>
+                    <td>Laten we nu eens goed kijken naar de “3”, aangeduid met een rode cirkel. Er zitten drie mijnen in de aangrenzende vakjes en er zijn in totaal nog maar drie vakjes bedekt; eentje heeft al een vlag op zich staan en de andere twee zijn
+                        nog helemaal leeg. Er is geen enkele andere manier – de twee bedekte vakjes moeten mijnen onder zich hebben. Laten we ook op deze twee vakjes vlaggen planten.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 8" id="img8" src="../board8.png" loading="lazy" width="148" height="184"></td>
+                    <td>Laten we nu kijken naar de twee vierkanten met een “2” erop, aangeduid met rode cirkels. Beide vakjes hebben maar twee bedekte vakjes aan zich liggen, aangegeven met bruine cirkels. Deze twee aangrenzende vakjes moeten daarom mijnen
+                        bevatten. Laten we hier onze vlaggen planten.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 9" id="img9" src="../board9.png" loading="lazy" width="148" height="184"></td>
+                    <td>Nu kunnen we een aantal van de vakjes identificeren die al het goede aantal vlaggetjes op de mijnen erom heen hebben staan. De twee voorbeelden zijn aangegeven met rode cirkels. Aangezien het nummer mijnen liggend aan deze hokjes overeenkomt
+                        met het cijfer op dit vakje, zijn er geen andere mijnen meer die aan deze vakjes grenzen. Daardoor kunnen we alle vakjes openleggen met de linkermuisknop. Laten we alle vakjes met een bruine cirkel omkeren.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 10" id="img10" src="../board10.png" loading="lazy" width="148" height="184"></td>
+                    <td>Een van de vakjes (met een rode cirkel) heeft een “2” en heeft maar twee bedekte vakjes om zich heen liggen, waarvan eentje al een vlaggetje heeft. We kunnen daardoor het andere vakje ook een vlag geven. Laten we met de rechtermuisknop
+                        op het vakje met de bruine cirkel klikken.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 11" id="img11" src="../board11.png" loading="lazy" width="148" height="184"></td>
+                    <td>In de volgende stap zien we drie vakjes met een “1”, die allemaal een mijn in hun nabijheid hebben. Alle andere naburige vakjes kunnen veilig worden opengelegd. Ze zijn aangegeven met bruine cirkels.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 12" id="img12" src="../board12.png" loading="lazy" width="148" height="184"></td>
+                    <td>Laten we ons nu richten op het cijfer “2”, aangeduid met een rode cirkel. Net als eerder, zijn er maar twee bedekte vakjes omheen, waarvan eentje al een vlag op zich heeft staan. Daardoor kunnen we een vlag planten op de andere (aangegeven
+                        met een bruine cirkel). Merk op dat nadat we dit hebben gedaan, onze mijnenteller linksboven het Mijnenveger bord laat zien dat het aantal resterende mijnen van één naar nul toe springt. Dit betekent dat we alle resterende vakjes
+                        veilig kunnen openleggen, aangezien ze op zeker geen mijnen onder zich hebben zitten – alle mijnen zijn immers al gevonden!</td>
+                </tr>
+                <tr>
+                    <td><img alt="Mijnenveger, oplossingsvoorbeeld, hoofdstuk 13" id="img13" src="../board13.png" loading="lazy" width="148" height="184"></td>
+                    <td>We hebben het spel gewonnen! De klok rechtsboven op het Mijnenveger bord laat zien dat het ons precies drie minuten heeft gekost om het spel af te maken.</td>
+                </tr>
+            </table><input type="button" value="Sluiten" onclick="hideallwindows();">
+        </div>
+        <div id="window4">
+            <h2>Geschiedenis</h2>
+            <p>Mijnenveger is een oud logica-spelletje dat meer dan 50 jaar geleden voor het eerst werd ontworpen. Het werd populair nadat het werd opgenomen in Microsoft Windows 3.1, om mensen te helpen te leren hoe je met een computermuis overweg kan en
+                om het nut van de linker- en rechtermuisknop te begrijpen.</p>
+            <p>De makers van Mijnenveger, Robert Donner en Kurt Johnson, haalden hun inspiratie uit het spel Relentless Logic (1985), een oud bordspel genaamd Zeeslag en het computerspel Hunt the Wumpus.</p>
+            <p>Mijnenveger veroverde al snel de harten van vele spelers over de hele wereld en staat nu op elke mogelijke lijst van de meest gespeelde spellen allertijden. Het gerucht gaat zelfs dat Bill Gates ooit verslaafd was aan Mijnenveger!</p>
+            <input
+                type="button" value="Sluiten" onclick="hideallwindows();">
+        </div>
+        <div id="window5">
+            <h2>Talen</h2>
+            <p>Je kan deze versie van Mijnenveger online spelen in de volgende talen:</p>
+            <ul>
+                <li><a href="../minestryger/">Dansk - Minestryger</a></li>
+                <li><a href="../spielen/">Deutsch - Minesweeper</a></li>
+                <li><a href="../">English - Minesweeper</a></li>
+                <li><a href="../buscaminas/">Español - Buscaminas</a></li>
+                <li><a href="../démineur/">Français - Démineur</a></li>
+                <li><a href="../campo_minato/">Italiano - Campo Minato</a></li>
+                <li><a href="../mijnenveger/">Nederlands - Mijnenveger</a></li>
+                <li><a href="../マインスイーパー/">日本語 - マインスイーパー</a></li>
+                <li><a href="../minesveiper/">Norsk - Minesveiper</a></li>
+                <li><a href="../saper/">Polski - Saper</a></li>
+                <li><a href="../campo_minado/">Português - Campo Minado</a></li>
+                <li><a href="../joc/">Română - Minesweeper</a></li>
+                <li><a href="../сапер/">Русский - Сапер</a></li>
+                <li><a href="../miinaharava/">Suomi - Miinaharava</a></li>
+                <li><a href="../röj/">Svenska - Röj</a></li>
+            </ul>
+            <input type="button" value="Sluiten" onclick="hideallwindows();">
+        </div>
+        <div id="window6">
+             
+        </div>
+
+        <div id="window7">
+            <h2>Je persoonlijke beste tijden</h2>
+            <table cellpadding=4>
+                <tr>
+                    <td><b>Beginner:</b></td>
+                    <td align="right"><b><span id="bestBeginner"></span></b></td>
+                </tr>
+                <tr>
+                    <td><b>Gevorderde:</b></td>
+                    <td align="right"><b><span id="bestIntermediate"></span>
+</b></td>
+                </tr>
+                <tr>
+                    <td><b>Expert:</b></td>
+                    <td align="right"><b><span id="bestExpert"></span>
+</b></td>
+                </tr>
+            </table>
+            <p>
+                <input type="button" name="resetScoresButton" value="Scores opnieuw instellen" onclick="scoresReset();">
+                <input type="button" value="Sluiten" onclick="hideallwindows();">
+            </p>
+        </div>
+
+        <div id="window8">
+            <h2>Aangepaste instellingen</h2>
+            <table border="0">
+                <tr>
+                    <td>Spelhoogte:</td>
+                    <td><input type="text" size="3" name="maxY" value="" id="maxY"></td>
+                </tr>
+                <tr>
+                    <td>Spelbreedte:</td>
+                    <td><input type="text" size="3" name="maxX" value="" id="maxX"></td>
+                </tr>
+                <tr>
+                    <td>Aantal bommen:</td>
+                    <td><input type="text" size="3" name="maxNumBombs" value="" id="maxNumBombs"></td>
+                </tr>
+            </table>
+            <p>
+                <input type="button" name="OKButton" value="OK" onclick="launchGame()">
+                <input type="button" name="CancelButton" value="Annuleren" onclick="hideallwindows();">
+            </p>
+        </div>
+
+        <div id="window9">
+            <h2>JE HEBT GEWONNEN!</h2>
+            <h3>Gefeliciteerd!</h3>
+            <p>Speeltijd: <span id="gameTime"></span><br><br>
+                <span id="gameFormat2"></span><br><br> Aantal klikken: <span id="numMoves"></span></p>
+            <h3 id="nr"></h3>
+            <input type="button" name="CancelButton" value="Sluiten" onclick="hideallwindows();">
+        </div>
+    </div>
+    <br>
+    <div id="bottompane">
+    </div>
+    <br>
+    <script>
+        function hideallwindows() {
+            for (var i = 1; i < 10; i++) document.getElementById("window" + i).style.display = "none";
+        }
+        hideallwindows();
+        var dim1 = document.getElementById("container").getBoundingClientRect();
+        var dim2 = document.getElementById("content").getBoundingClientRect();
+        var rt = document.body.scrollWidth - Math.min(dim1.left, dim2.left) + 10;
+        var tp = dim1.top;
+        document.write('<div id="leftpane" style="position:absolute;right:' + rt + 'px;top:' + tp + 'px;text-align:right;">');
+    </script>
+    </div>
+    <script>
+        var lt = Math.max(dim1.right, dim2.right) + 10;
+        document.write('<div id="rightpane" style="position:absolute;left:' + lt + 'px;top:' + tp + 'px;text-align:left;">');
+    </script>
+    </div>
+    <script>
+        function closep(n) {
+            var t = ["toppane", "middlepane", "bottompane", "leftpane", "rightpane"];
+            var dv = document.getElementById(t[n]);
+            dv.style.display = "none";
+            rsz();
+        }
+
+        function ev(a, l, v) {
+            var opt = {
+                'event_category': l
+            };
+            if (v != null) opt['event_label'] = v;
+            gtag('event', a, opt);
+        }
+        setInterval(function() {
+            ev('time', '4minutes');
+        }, 240000);
+        window.onbeforeunload = function() {
+            ev('time', 'unload');
+            return undefined;
+        };
+        useQuestionMarks = !(getCookie("useQuestionMarks") == 'false');
+        useMacroOpen = !(getCookie("useMacroOpen") == 'false');
+        useFirstClickUseful = !(getCookie("useFirstClickUseful") == 'false');
+        openRemaining = (getCookie("openRemaining") == 'true');
+        allowDisarm = (getCookie("allowDisarm") == 'true');
+        allowHints = !(getCookie("allowHints") == 'false');
+        maxCells = (maxX + 1) * (maxY + 1) - 1;
+        maxStackHeight = 300;
+        cellArray = new Array(maxCells + 1);
+
+        function constructCell() {
+            this.isBomb = false;
+            this.isExposed = false;
+            this.isFlagged = false;
+            this.isDisarmed = false;
+            this.isQuestion = false;
+            this.isMarked = false;
+            this.neighborBombs = 0;
+        }
+        for (var l = 0; l <= maxCells; l++) cellArray[l] = new constructCell();
+        markedArray = new Array(maxStackHeight);
+        dead = false;
+        win = false;
+        bombsFlagged = 0;
+        cellsOpen = 0;
+        markedCount = -1;
+        highestStackHeight = -1;
+        numMoves = 0;
+        openRemainingUsed = false;
+        allowDisarmUsed = false;
+        allowHintsUsed = false;
+        lastClickOnMenu = false;
+        disarmed = 0;
+        hints = 0;
+        paused = false;
+        clockMoving = false;
+        clockActive = false;
+        killLastClock = false;
+        clockCurrent = -1;
+        fuseBurning = false;
+        fuseRemaining = 0;
+        disarmX = 0;
+        disarmY = 0;
+
+        function arrayIndexOf(x, y) {
+            return x + y * (maxX + 1);
+        }
+
+        function imageIndexOf(x, y) {
+            return x + (y + 2) * (maxX + 3) + 27;
+        }
+
+        function checkBounds(x, y) {
+            return (0 <= x && x <= maxX && 0 <= y && y <= maxY);
+        }
+
+        function closeAllMenus() {
+            closeMenu("divMenuHelp");
+            closeMenu("divMenuOpt");
+            closeMenu("divMenuGame");
+        }
+
+        function closeMenu(selectedMenu) {
+            document.getElementById(selectedMenu).style.visibility = "hidden";
+        }
+
+        function openMenu(selectedMenu) {
+            document.getElementById(selectedMenu).style.visibility = "visible";
+        }
+
+        function menuSetOptionChecks(cookieVar, imageLoc) {
+            if (cookieVar) imageLoc.src = checked.src;
+            else imageLoc.src = notchecked.src;
+        }
+
+        function menusSetAllOptionChecks(thisMenu) {
+            if (thisMenu == "divMenuGame") {
+                document.imBeginner.src = notchecked.src;
+                document.imIntermediate.src = notchecked.src;
+                document.imExpert.src = notchecked.src;
+                document.imCustom.src = notchecked.src;
+                if (gameFormat == "Beginner") document.imBeginner.src = checked.src;
+                else if (gameFormat == "Intermediate") document.imIntermediate.src = checked.src;
+                else if (gameFormat == "Expert") document.imExpert.src = checked.src;
+                else document.imCustom.src = checked.src;
+            } else if (thisMenu == "divMenuOpt") {
+                menuSetOptionChecks(useQuestionMarks, document.imMarks);
+                menuSetOptionChecks(useMacroOpen, document.imUseMacro);
+                menuSetOptionChecks(useFirstClickUseful, document.imFirst);
+                menuSetOptionChecks(openRemaining, document.imRemaining);
+                menuSetOptionChecks(allowDisarm, document.imDisarm);
+                menuSetOptionChecks(allowHints, document.imHints);
+            }
+        }
+
+        function menuClick(thisMenu) {
+            visibleTest = document.getElementById(thisMenu).style.visibility == "visible";
+            closeAllMenus();
+            if (!visibleTest) {
+                menusSetAllOptionChecks(thisMenu);
+                openMenu(thisMenu);
+            }
+            lastClickOnMenu = true;
+            return false;
+        }
+
+        function menuMouseOver(currentMenu) {
+            visibleTestGeneral = (document.getElementById("divMenuGame").style.visibility == "visible" || document.getElementById("divMenuOpt").style.visibility == "visible" || document.getElementById("divMenuHelp").style.visibility == "visible");
+            visibleTestSpecific = document.getElementById(currentMenu).style.visibility == "visible";
+            if (visibleTestGeneral && !visibleTestSpecific) {
+                menuClick(currentMenu);
+                lastClickOnMenu = false;
+            }
+            return false;
+        }
+
+        function clickInBrowser() {
+            if (!lastClickOnMenu) {
+                closeMenu("divMenuHelp");
+                closeMenu("divMenuOpt");
+                closeMenu("divMenuGame");
+            }
+            lastClickOnMenu = false;
+        }
+
+        function menuItemClick(thisMsg) {
+            if (thisMsg == "New") faceClick();
+            else if (thisMsg == "Pause") doPause();
+            else if (thisMsg == "Beginner" || thisMsg == "Intermediate" || thisMsg == "Expert") {
+                setCookie("gameFormat", thisMsg);
+                window.location.href = window.location.href;
+            } else if (thisMsg == "Custom") {
+                var e = document.getElementById("window8");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+                document.getElementById("maxY").value = maxY + 1;
+                document.getElementById("maxX").value = maxX + 1;
+                document.getElementById("maxNumBombs").value = maxNumBombs;
+            } else if (thisMsg == "Personal") {
+                var e = document.getElementById("window7");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+                reloadpersonalbest();
+            } else if (thisMsg == "Marks") {
+                useQuestionMarks = !useQuestionMarks;
+                setCookie("useQuestionMarks", useQuestionMarks);
+            } else if (thisMsg == "Area") {
+                useMacroOpen = !useMacroOpen;
+                setCookie("useMacroOpen", useMacroOpen);
+            } else if (thisMsg == "First") {
+                useFirstClickUseful = !useFirstClickUseful;
+                setCookie("useFirstClickUseful", useFirstClickUseful);
+            } else if (thisMsg == "Remaining") {
+                openRemaining = !openRemaining;
+                updateNumBombs();
+                setCookie("openRemaining", openRemaining);
+            } else if (thisMsg == "Disarm") {
+                allowDisarm = !allowDisarm;
+                setCookie("allowDisarm", allowDisarm);
+            } else if (thisMsg == "Hints") {
+                allowHints = !allowHints;
+                setCookie("allowHints", allowHints);
+            } else if (thisMsg == "About") {
+                var e = document.getElementById("window1");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            } else if (thisMsg == "Instructions") {
+                var e = document.getElementById("window2");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            } else if (thisMsg == "Example") {
+                var e = document.getElementById("window3");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            } else if (thisMsg == "History") {
+                var e = document.getElementById("window4");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            } else if (thisMsg == "Languages") {
+                var e = document.getElementById("window5");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            } else if (thisMsg == "OtherGames") {
+                var e = document.getElementById("window6");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            };
+            closeAllMenus();
+            return false;
+        }
+
+        function hideDisarm() {
+            document.getElementById("divDisarm").style.visibility = "hidden";
+            document.face.src = faceSmile.src;
+        }
+
+        function hidePause() {
+            document.getElementById("divPause").style.visibility = "hidden";
+            paused = false;
+        }
+
+        function clearBoardImages() {
+            for (var j = 0; j <= maxY; j++)
+                for (var i = 0; i <= maxX; i++) with(cellArray[arrayIndexOf(i, j)])
+            document.images[imageIndexOf(i, j)].src = blankCell.src;
+        }
+
+        function clearBoard() {
+            for (var i = 0; i <= maxX; i++)
+                for (var j = 0; j <= maxY; j++) with(cellArray[arrayIndexOf(i, j)]) {
+                    isExposed = false;
+                    isBomb = false;
+                    isFlagged = false;
+                    isMarked = false;
+                    isQuestion = false;
+                    neighborBombs = 0;
+                }
+        }
+
+        function updateClock() {
+            tempClock = clockCurrent;
+            if (tempClock < 0) tempClock = 0;
+            if (tempClock > 999) tempClock = 999;
+            digit = tempClock % 10;
+            document.time1s.src = timeDigits[digit].src;
+            digit = Math.floor(tempClock / 10 % 10);
+            document.time10s.src = timeDigits[digit].src;
+            digit = Math.floor(tempClock / 100);
+            document.time100s.src = timeDigits[digit].src;
+        }
+
+        function clockStop() {
+            clockMoving = false;
+        }
+
+        function clockClear() {
+            clockCurrent = -1;
+            updateClock();
+            clockMoving = false;
+        }
+
+        function updateNumBombs() {
+            var h = maxNumBombs - bombsFlagged;
+            if (!dead && !win && openRemaining && h == 0) {
+                document.bomb1s.src = movesDigits0.src;
+                document.bomb10s.src = movesDigits0.src;
+                document.bomb100s.src = movesDigits0.src;
+            } else {
+                if (h < -99) h = -99;
+                digit = Math.abs(h) % 10;
+                document.bomb1s.src = timeDigits[digit].src;
+                digit = Math.floor(Math.abs(h) / 10 % 10);
+                document.bomb10s.src = timeDigits[digit].src;
+                digit = Math.floor(Math.abs(h) / 100 % 10);
+                document.bomb100s.src = timeDigits[digit].src;
+                if (h < 0) document.bomb100s.src = timeNeg.src;
+            }
+        }
+
+        function addNeighbor(x, y) {
+            if (checkBounds(x, y)) cellArray[arrayIndexOf(x, y)].neighborBombs++;
+        }
+
+        function placeBomb(x, y) {
+            with(cellArray[arrayIndexOf(x, y)]) if (!isBomb && !isExposed) {
+                isBomb = true;
+                for (var i = x - 1; i <= x + 1; i++)
+                    for (var j = y - 1; j <= y + 1; j++) addNeighbor(i, j);
+                return true;
+            } else return false;
+        }
+
+        function placeBombRandomLoc() {
+            bombPlaced = false;
+            while (!bombPlaced) {
+                with(Math) {
+                    i = floor(random() * (maxX + 1));
+                    j = floor(random() * (maxY + 1));
+                }
+                bombPlaced = placeBomb(i, j);
+            }
+        }
+
+        function makeBoard() {
+            clearBoard();
+            bombsFlagged = 0;
+            cellsOpen = 0;
+            updateNumBombs();
+            hints = 0;
+            disarmed = 0;
+            bombsToPlace = maxNumBombs;
+            while (bombsToPlace != 0) {
+                placeBombRandomLoc();
+                bombsToPlace--;
+            }
+        }
+
+        function faceClick_first() {
+            document.face.src = faceWait.src;
+            hideDisarm();
+            hidePause();
+            numMoves = 0;
+            closeAllMenus();
+            clockClear();
+            makeBoard();
+            clearBoardImages();
+            forceFocus();
+            dead = false;
+            win = false;
+            openRemainingUsed = false;
+            allowDisarmUsed = false;
+            allowHintsUsed = false;
+            document.face.src = faceSmile.src;
+            return false;
+        }
+        faceClick_first();
+
+        function showMouseDown(e) {
+            if (!dead && !win) {
+                closeAllMenus();
+                document.face.src = faceOoh.src;
+            }
+        }
+
+        function ignoreDragging() {
+            try {
+                window.event.returnValue = false;
+            } catch (e) {}
+            return false;
+        }
+
+        function removeNeighbor(x, y) {
+            if (checkBounds(x, y)) cellArray[arrayIndexOf(x, y)].neighborBombs--;
+        }
+
+        function removeBomb(x, y) {
+            for (var i = x - 1; i <= x + 1; i++)
+                for (var j = y - 1; j <= y + 1; j++) removeNeighbor(i, j);
+            cellArray[arrayIndexOf(x, y)].isBomb = false;
+        }
+
+        function ticClock() {
+            if (!killLastClock) {
+                if (clockMoving) clockCurrent++;
+                if (clockMoving && clockCurrent < 1000) updateClock();
+                clockActive = clockMoving;
+                if (clockActive) setTimeout(ticClock, 1000);
+            }
+            killLastClock = false;
+        }
+
+        function clockStart() {
+            clockWasActive = clockActive;
+            clockMoving = true;
+            ticClock();
+            if (clockWasActive) killLastClock = true;
+        }
+
+        function firstClick(x, y) {
+            if (!useFirstClickUseful) {
+                if (cellArray[arrayIndexOf(x, y)].isBomb) {
+                    placeBombRandomLoc();
+                    removeBomb(x, y);
+                }
+            } else {
+                var i, j;
+                for (i = x - 1; i <= x + 1; i++)
+                    for (j = y - 1; j <= y + 1; j++)
+                        if (checkBounds(i, j))
+                            cellArray[arrayIndexOf(i, j)].isExposed = true;
+                for (i = x - 1; i <= x + 1; i++)
+                    for (j = y - 1; j <= y + 1; j++)
+                        if (checkBounds(i, j) && cellArray[arrayIndexOf(i, j)].isBomb) {
+                            removeBomb(i, j);
+                            placeBombRandomLoc();
+                        }
+                for (i = x - 1; i <= x + 1; i++)
+                    for (j = y - 1; j <= y + 1; j++)
+                        if (checkBounds(i, j))
+                            cellArray[arrayIndexOf(i, j)].isExposed = false;
+            }
+            clockStart();
+        }
+
+        function constructMarkedCell() {
+            this.x = -1;
+            this.y = -1;
+        }
+
+        function markCellToOpen(x, y) {
+            ++markedCount;
+            if (highestStackHeight < markedCount) {
+                ++highestStackHeight;
+                markedArray[markedCount] = new constructMarkedCell();
+            }
+            markedArray[markedCount].x = x;
+            markedArray[markedCount].y = y;
+            cellArray[arrayIndexOf(x, y)].isMarked = true;
+        }
+
+        function markMatrixToOpen(x, y) {
+            for (var i = x - 1; i <= x + 1; i++)
+                for (var j = y - 1; j <= y + 1; j++)
+                    if (checkBounds(i, j)) with(cellArray[arrayIndexOf(i, j)])
+            if ((!isExposed) && (!isMarked) && (!isFlagged)) markCellToOpen(i, j);
+        }
+
+        function winShowFlags() {
+            for (var i = 0; i <= maxX; i++)
+                for (var j = 0; j <= maxY; j++) with(cellArray[arrayIndexOf(i, j)]) if (!isExposed && !isFlagged) {
+                    isFlagged = true;
+                    document.images[imageIndexOf(i, j)].src = bombFlagged.src;
+                }
+        }
+
+        function deathShowBombs() {
+            for (var i = 0; i <= maxX; i++)
+                for (var j = 0; j <= maxY; j++) with(cellArray[arrayIndexOf(i, j)]) if (!isExposed) {
+                    if (isBomb && !isFlagged) document.images[imageIndexOf(i, j)].src = bombRevealed.src;
+                    else if (!isBomb && isFlagged) document.images[imageIndexOf(i, j)].src = bombMisFlagged.src;
+                }
+        }
+
+        function openCellDeath(x, y) {
+            with(cellArray[arrayIndexOf(x, y)]) {
+                document.images[imageIndexOf(x, y)].src = bombDeath.src;
+                document.face.src = faceDead.src;
+                var e = document.getElementById("window9");
+                var disp = e.style.display;
+                if (disp == "block") e.style.display = "none";
+                isExposed = true;
+                dead = true;
+                updateNumBombs();
+                deathShowBombs();
+            }
+        }
+
+        function winShowWindow() {
+            win = true;
+            setCookie("gameTime", clockCurrent);
+            setCookie("numMoves", numMoves);
+            setCookie("openRemainingUsed", openRemainingUsed);
+            setCookie("allowDisarmUsed", allowDisarmUsed);
+            setCookie("allowHintsUsed", allowHintsUsed);
+            if (hints == 0 && disarmed == 0) {
+                document.face.src = faceWin.src;
+                var e = document.getElementById("window9");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+                document.getElementById("gameTime").textContent = clockCurrent;
+                var gameTime = clockCurrent;
+                if (gameTime > 999) gameTime = 999;
+                var highTime = parseInt(getCookie(gameFormat), 10);
+                var newRecord = 0;
+                if (gameTime < highTime || isNaN(highTime)) {
+                    newRecord = 1;
+                    highTime = gameTime;
+                    setCookie(gameFormat, highTime);
+                }
+                if (gameFormat == "Custom") document.getElementById("gameFormat2").textContent = "Jouw spelparameters waren: " + (maxX + 1) + "x" + (maxY + 1) + " met " + maxNumBombs + " bommen.";
+                else {
+                    var gf;
+                    if (gameFormat == "Beginner") gf = "Beginner";
+                    if (gameFormat == "Intermediate") gf = "Gevorderde";
+                    if (gameFormat == "Expert") gf = "Expert";
+                    document.getElementById("gameFormat2").textContent = "Je beste " + gf + " tijd is: " + highTime;
+                }
+                document.getElementById("numMoves").textContent = numMoves;
+                if (newRecord && gameFormat != "Custom") document.getElementById("nr").innerText = "Nieuw record!";
+                else document.getElementById("nr").innerText = "";
+            } else {
+                document.face.src = facePirate.src;
+                var e = document.getElementById("window9");
+                var disp = e.style.display;
+                if (disp == "block") e.style.display = "none";
+            }
+        }
+
+        function openCell(x, y) {
+            with(cellArray[arrayIndexOf(x, y)]) if (isBomb) {
+                clockStop();
+                if (allowDisarm) {
+                    showDisarm(); //maxX, maxY);
+                    disarmX = x;
+                    disarmY = y;
+                    markedCount = -1;
+                    for (l = 0; l <= maxCells; l++) cellArray[l].isMarked = false;
+                } else openCellDeath(x, y);
+            } else {
+                document.images[imageIndexOf(x, y)].src = cellOpenIm[neighborBombs].src;
+                isExposed = true;
+                isMarked = false;
+                ++cellsOpen;
+                if (neighborBombs == 0 && !isBomb) markMatrixToOpen(x, y);
+                if (cellsOpen + maxNumBombs - 1 == maxCells) {
+                    clockStop();
+                    winShowFlags();
+                    winShowWindow();
+                }
+            }
+        }
+
+        function openAllMarked() {
+            while (markedCount >= 0) {
+                markedCount--;
+                with(markedArray[markedCount + 1]) openCell(x, y);
+            }
+        }
+
+        function checkFlagged(x, y) {
+            if (checkBounds(x, y)) return cellArray[arrayIndexOf(x, y)].isFlagged ? 1 : 0;
+            return 0;
+        }
+
+        function checkFlaggedMatrix(x, y) {
+            count = 0;
+            for (var i = x - 1; i <= x + 1; i++)
+                for (var j = y - 1; j <= y + 1; j++)
+                    if (i != x || j != y) count += checkFlagged(i, j);
+            return count;
+        }
+
+        function cellClick(x, y, e) {
+            closeAllMenus();
+            if (!dead && !win) {
+                document.face.src = faceSmile.src;
+                numMoves++;
+                if (e.button != 2) {
+                    if (!clockMoving) firstClick(x, y);
+                    with(cellArray[arrayIndexOf(x, y)]) if (isExposed) {
+                        if (useMacroOpen && checkFlaggedMatrix(x, y) == neighborBombs) {
+                            markMatrixToOpen(x, y);
+                            openAllMarked();
+                        }
+                    } else
+                    if (!isFlagged) {
+                        markCellToOpen(x, y);
+                        openAllMarked();
+                    }
+                    if (win) {
+                        bombsFlagged = maxNumBombs;
+                        updateNumBombs();
+                    }
+                } else if (x > -1) with(cellArray[arrayIndexOf(x, y)]) if (!isExposed) {
+                    if (isFlagged) {
+                        bombsFlagged--;
+                        isFlagged = false;
+                        if (!useQuestionMarks) document.images[imageIndexOf(x, y)].src = blankCell.src;
+                        else {
+                            isQuestion = true;
+                            document.images[imageIndexOf(x, y)].src = (bombQuestion.src);
+                        }
+                    } else {
+                        if (isQuestion) {
+                            isQuestion = false;
+                            document.images[imageIndexOf(x, y)].src = blankCell.src;
+                        } else {
+                            isFlagged = true;
+                            ++bombsFlagged;
+                            document.images[imageIndexOf(x, y)].src = bombFlagged.src;
+                        }
+                    }
+                    updateNumBombs();
+                }
+            }
+            forceFocus();
+        }
+
+        function faceClick() {
+            if (fuseBurning) return false;
+            faceClick_first();
+            var e = document.getElementById("window9");
+            var disp = e.style.display;
+            if (disp == "block") e.style.display = "none";
+            return false;
+        }
+        document.onkeydown = checkKeyDown;
+
+        function checkKeyDown(e) {
+            var chr = e.which || e.keyCode;
+            if (chr == 113) faceClick();
+            if (chr == 80) doPause();
+            if (chr == 72) doHint(e);
+        }
+
+        function doHint(e) {
+            if (allowHints && !dead && !win && clockMoving && pointingAtX > -1) with(cellArray[arrayIndexOf(pointingAtX, pointingAtY)]) if ((!isExposed) && (!isFlagged) && (!isQuestion) && (!isMarked)) {
+                if (isBomb) document.images[imageIndexOf(pointingAtX, pointingAtY)].src = bombShadow.src;
+                else if (neighborBombs == 0) cellClick(pointingAtX, pointingAtY, e);
+                else document.images[imageIndexOf(pointingAtX, pointingAtY)].src = cellShadowIm[neighborBombs].src;
+                hints++;
+            }
+        }
+
+        function doUnpause() {
+            if (!dead && !win && !clockMoving && paused) {
+                document.face.src = faceSmile.src;
+                hidePause();
+                clockStart();
+            }
+        }
+
+        function doPause() {
+            if (!dead && !win && clockMoving && !paused) {
+                paused = true;
+                clockStop();
+                with(document.getElementById("divPause").style) {
+                    left = "7px";
+                    top = "67px";
+                    width = 16 * (maxX + 1) + "px";
+                    height = 16 * (maxY + 1) + "px";
+                    visibility = "visible";
+                }
+                document.face.src = faceWait.src;
+            } else doUnpause();
+        }
+
+        function fuseStop() {
+            hideDisarm();
+            fuseBurning = false;
+        }
+
+        function acceptFate() {
+            fuseStop();
+            openCellDeath(disarmX, disarmY);
+        }
+
+        function ticFuse() {
+            if (fuseBurning) {
+                if (fuseRemaining <= 0) {
+                    if (!clockMoving) acceptFate();
+                } else {
+                    let d1 = Math.floor(fuseRemaining / 10);
+                    let d2 = fuseRemaining % 10;
+                    document.getElementById("detonateCountdown").innerHTML = d1 + "." + d2;
+                    setTimeout("ticFuse()", 100);
+                }
+                fuseRemaining--;
+            }
+        }
+
+        function disarmMine() {
+            fuseStop();
+            ++disarmed;
+            ++bombsFlagged;
+            updateNumBombs();
+            with(cellArray[arrayIndexOf(disarmX, disarmY)]) {
+                isFlagged = true;
+                isDisarmed = true;
+                isExposed = true;
+            }
+            document.images[imageIndexOf(disarmX, disarmY)].src = bombDisarmed.src;
+            clockStart();
+        }
+
+        function showDisarm() {
+            with(document.getElementById("divDisarm").style) {
+                left = "7px";
+                top = "67px";
+                width = 16 * (maxX + 1) + "px";
+                height = 16 * (maxY + 1) + "px";
+                visibility = "visible";
+                fuseRemaining = 30;
+                fuseBurning = true;
+                ticFuse();
+                document.face.src = faceOoh.src;
+            }
+        }
+
+        function zoomDoTransform() {
+            var elem = document.getElementById("gamediv");
+            elem.style.transform = "scale(" + zoomPower() + ")";
+            setCookie("zoomLevel", zoomLevel);
+            var elem2 = document.getElementById("container");
+            elem2.style.width = gwidth() + "px";
+            elem2.style.height = gheight() + "px";
+            rsz();
+        }
+
+        function zoomIn() {
+            if (zoomLevel < 12) {
+                zoomLevel++;
+                zoomDoTransform();
+            }
+        }
+
+        function zoomOut() {
+            if (zoomLevel > -2) {
+                zoomLevel--;
+                zoomDoTransform();
+            }
+        }
+
+        function rsz() {
+            var dim1 = document.getElementById("container").getBoundingClientRect();
+            var dim2 = document.getElementById("content").getBoundingClientRect();
+            var rt = document.body.scrollWidth - Math.min(dim1.left, dim2.left) + 10;
+            var tp = dim1.top;
+            var lt = Math.max(dim1.right, dim2.right) + 10;
+            with(document.getElementById("leftpane").style) {
+                top = tp + "px";
+                right = rt + "px";
+            }
+            with(document.getElementById("rightpane").style) {
+                top = tp + "px";
+                left = lt + "px";
+            }
+        }
+        window.onresize = rsz;
+
+        function cellTouch() {
+            if (pointingAtX > -1) {
+                if (cellArray[arrayIndexOf(pointingAtX, pointingAtY)].isExposed) cellClick(pointingAtX, pointingAtY, 1);
+                else {
+                    if (!clockMoving) cellClick(pointingAtX, pointingAtY, 1);
+                    else cellClick(pointingAtX, pointingAtY, 2);
+                }
+            }
+        }
+
+        function openAll() {
+            allOK = true;
+            for (var i = 0; i <= maxX; i++)
+                for (var j = 0; j <= maxY; j++) with(cellArray[arrayIndexOf(i, j)]) if (!isExposed) {
+                    if (isBomb && !isFlagged) {
+                        document.images[imageIndexOf(i, j)].src = bombDeath.src;
+                        allOK = false;
+                    } else if (!isBomb && isFlagged) document.images[imageIndexOf(i, j)].src = bombMisFlagged.src;
+                    else if (!isBomb) document.images[imageIndexOf(i, j)].src = cellOpenIm[neighborBombs].src;
+                }
+            return allOK;
+        }
+
+        function bombCountClick() {
+            closeAllMenus();
+            if (!dead && !win && openRemaining && maxNumBombs == bombsFlagged) {
+                clockStop();
+                numMoves++;
+                openRemainingUsed = true;
+                if (openAll()) {
+                    winShowWindow();
+                    updateNumBombs();
+                } else {
+                    dead = true;
+                    updateNumBombs();
+                    document.face.src = faceDead.src;
+                }
+            }
+            forceFocus();
+            return false;
+        }
+
+        function launchGame() {
+            n_maxX = document.getElementById("maxX").value;
+            n_maxY = document.getElementById("maxY").value;
+            n_maxNumBombs = document.getElementById("maxNumBombs").value;
+            maxLegalBombs = Math.round(n_maxX * n_maxY / 3);
+            if (isNaN(n_maxX) || n_maxX < 8 || n_maxX > 32 || isNaN(n_maxY) || n_maxY < 8 || n_maxY > 24 || isNaN(n_maxNumBombs) || n_maxNumBombs < 1 || n_maxNumBombs > maxLegalBombs) alert("Je Mijnenveger-afmetingen zijn ongeldig:\n\tBreedte: van 8 tot 32\n\tHoogte: van 8 tot 24\n\tBommen: 1 tot 1/3 van de vakken");
+            else {
+                setCookie("gameFormat", "Custom");
+                maxX = n_maxX - 1;
+                maxY = n_maxY - 1;
+                maxNumBombs = n_maxNumBombs;
+                setCookie("maxX", maxX);
+                setCookie("maxY", maxY);
+                setCookie("maxNumBombs", maxNumBombs);
+                window.location.href = window.location.href;
+            }
+        }
+
+        function reloadpersonalbest() {
+            var bestBeginner = parseInt(getCookie("Beginner"), 10);
+            if (isNaN(bestBeginner)) bestBeginner = 999;
+            var bestIntermediate = parseInt(getCookie("Intermediate"), 10);
+            if (isNaN(bestIntermediate)) bestIntermediate = 999;
+            var bestExpert = parseInt(getCookie("Expert"), 10);
+            if (isNaN(bestExpert)) bestExpert = 999;
+            document.getElementById("bestBeginner").textContent = bestBeginner;
+            document.getElementById("bestIntermediate").textContent = bestIntermediate;
+            document.getElementById("bestExpert").textContent = bestExpert;
+        }
+
+        function scoresReset() {
+            setCookie("Beginner", 999);
+            setCookie("Intermediate", 999);
+            setCookie("Expert", 999);
+            reloadpersonalbest();
+        }
+    </script>
+</body>
+
+</html>

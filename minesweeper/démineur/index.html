@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head> 
+    <script>
+         
+        var qp1 = "data:image/gif;base64,R0lGODdh",
+            qp2 = "APEAAHt7e729vf///wAAACwAAAAA",
+            qp3 = "EAAQ" + qp2 + "EAAQAAAC",
+            qp4 = "AAACwAAAAAEAAQAAAC",
+            qp5 = "DQAXAPEAAAAAAHsAAP8AAAAAACwAAAAADQAXAAAC";
+        var ntck = qp1 + "CgAKAPAAAL29vQAAACwAAAAACgAKAAACCISPqcvtD2MrADs=";
+
+        function insnc(t) {
+            document.write('<img src="' + ntck + '" width="10" height="10" border="0" name="' + t + '">');
+        }
+        timeDigits = new Array(10);
+        for (var i = 0; i < 10; i++) timeDigits[i] = new Image(23, 13);
+        timeDigits[0].src = qp1 + qp5 + "OYSPKct8ApqDEcpqHNL6rfxtYQdSZGVSimkEgOtGCPzWT1vHaQKWa6ryoX5CD5CIuYxQDVlJEuQlCgA7";
+        timeDigits[1].src = qp1 + qp5 + "N4SPCbHN95g0ApoJRHVJ79ZpF3h4VrhhpTgqbMRlyKSCNHWG47N+fL9D5YAxog30Cj4+nJpCUQAAOw==";
+        timeDigits[2].src = qp1 + qp5 + "PISPKct8AZoTLzZrIEQuJ0sBmrJUZDhypfetkFSGIHxQMLWtyQbuotFB8IKenM7UE/4wkmVk5hjeZJ9PAQA7";
+        timeDigits[3].src = qp1 + qp5 + "OYSPKct8AZoTLzZrIEQuJ0sBmrJUZDhypfetkFSGIFzBlLyRXm50Yuv6qXBAlPDge12CtgjSJvt8CgA7";
+        timeDigits[4].src = qp1 + qp5 + "PISPCbHNJwybJgJh6bXYQlyBSBd65TmKZMqZX7V1oCfXB1PPt7JJDbtLrDQfzwPoEIp+GtGD8jBBfzxeAQA7";
+        timeDigits[5].src = qp1 + qp5 + "OYSPKct8ApoLZsUGaLWIapdoF9RlG1meoXklhghJFixzZh0dIsJ5ir1TmYIgFq9nFN4wSByqZnO5CgA7";
+        timeDigits[6].src = qp1 + qp5 + "OYSPKct8ApoLZsUGaLWIapdoF9RlG1meoXklhghJFixz0YiRNsKBT78bqXhA1NB3jOV0OAeqFnQhCgA7";
+        timeDigits[7].src = qp1 + qp5 + "OYSPKct8AZoTLzZrIEQuJ0sBmrJUZDhypfet27iFHoy84h2Z5HzqR5f6rXAqFNHQwaVcvFjtFvxICwA7";
+        timeDigits[8].src = qp1 + "DQAXAPAAAAAAAP8AACwAAAAADQAXAAACNISPGct8AZqDEcpqHNL6rfxtYQdSZGVSiok2kSeFb2yBiY2uqVr24q7zwWyXUWsCi92WhgIAOw==";
+        timeDigits[9].src = qp1 + qp5 + "OoSPKct8ApqDEcpqHNL6rfxtYQdSZGVSiok2kSeFQNBOB51g8y6qeG+g/Uq3nEa48tV0tJgFFstJDQUAOw==";
+        timeNeg = new Image(23, 13);
+        timeNeg.src = qp1 + qp5 + "MoSPCbHN95g0rzkKba4VcY19ytdd2JgJ6ipo7Ju+rZiQtVae5pah4S2a4H4RzyWnQBQAADs=";
+        movesDigits0 = new Image(23, 13);
+        movesDigits0.src = qp1 + "DQAXAPEAAAAAAACAgAD//wAAACwAAAAADQAXAAACOYSPKct8ApqDEcpqHNL6rfxtYQdSZGVSimkEgOtGCPzWT1vHaQKWa6ryoX5CD5CIuYxQDVlJEuQlCgA7";
+        cellOpenIm = new Array(9);
+        for (var i = 0; i < 9; i++) cellOpenIm[i] = new Image(16, 16);
+        cellOpenIm[0].src = qp1 + "EAAQAPAAAHt7e729vSwAAAAAEAAQAAACHYSPacHtD550cc5qYZZ4s+6Bm5iRlnl5lNqgHMsUADs=";
+        cellOpenIm[1].src = qp1 + "EAAQAPEAAAAA/3t7e729vQ" + qp4 + "KYyPacLtH550UQIgq7sYPt5RG5hZV/mdXho2WsOhDBi7Iy1O06vb/VMAADs=";
+        cellOpenIm[2].src = qp1 + "EAAQAPEAAAB7AHt7e729vQ" + qp4 + "LYyPacLtH550kYGLL7W5t4o5IVNNo1CKJ/p4G7d+MDCRc0fbAp7JtZT66YSNAgA7";
+        cellOpenIm[3].src = qp1 + "EAAQAPEAAHt7e729vf8AAA" + qp4 + "LISPacHtD550MYiLMWW5i1ZNGhNKY1Ba3eZ4rHiBExeTtFejtyvPUurTBR0FADs=";
+        cellOpenIm[4].src = qp1 + "EAAQAPEAAAAAe3t7e729vQ" + qp4 + "LoyPacLtH550sYErLqBOZ9xU3zZyjFeGp8aCQtW26oQy4lO/U2rv+b2bBU3DRgEAOw==";
+        cellOpenIm[5].src = qp1 + "EAAQAPEAAHsAAHt7e729vQ" + qp4 + "KYyPacLtH550UYCLc6u5g81gE2hdI8N5JqmK6OkK1RSnLXuTJ7VDvVMAADs=";
+        cellOpenIm[6].src = qp1 + "EAAQAPEAAAB7e3t7e729vQ" + qp4 + "LIyPacLtH550kYGLL7U5b4FNTRWKAtmVDJpqKwc4Kiu7J9yOTRvrJvQDBhsFADs=";
+        cellOpenIm[7].src = qp1 + "EAAQAPEAAAAAAHt7e729vQ" + qp4 + "KoyPacLtH550UYCLc6u5gz0xGBiOTCWZZ3lRk7qmrfvAsWMLaEjzvc8oAAA7";
+        cellOpenIm[8].src = qp1 + "EAAQAPAAAHt7e729vSwAAAAAEAAQAAACKYSPacHtD550kanV6j3ZYl8F2id+4UZlV1qGbfeqJ7hacsJOkqvDvVMAADs=";
+        cellShadowIm = new Array(9);
+        for (var i = 0; i < 9; i++) cellShadowIm[i] = new Image(16, 16);
+        cellShadowIm[0].src = qp1 + qp3 + "KpSPGckXYIKcVAIoqn541xt5E5iJVmdyoUmmasmi8Sq2Kchd+q7n/A8oAAA7";
+        cellShadowIm[1].src = qp1 + qp3 + "MpSPGckXYIKcVAIo6gP0xn6Bn3Vxk5eRpZieoTuqbLXCrWy75YvqOxnTADe74sqIvBQAADs=";
+        cellShadowIm[2].src = qp1 + qp3 + "NJSPGckXYIKcVAIo7N1XRw4CDzaK0zZGlSZeKsV52RnLbAeTdeVmYdwr/VKzVc73CwmTmwIAOw==";
+        cellShadowIm[3].src = qp1 + qp3 + "MpSPGckXYIKcVAIo3t3bYs1xWlR5wJiVIEqFJzu5Hll2F13ZnyveGX+ZpVQxCAioQ3IKADs=";
+        cellShadowIm[4].src = qp1 + qp3 + "NJSPGckXYIKcVAIo5gXvWqx52xd1nElm6HpF2zu2GQx3ZTXaKu7p1XeS/VigIaVlotWUzAIAOw==";
+        cellShadowIm[5].src = qp1 + qp3 + "MZSPGckXYIKcVAIo3t1cRw4CXrZV0/VdpoVpoTi6b7yWaFartxzGr0pbnSC8n8gYKgAAOw==";
+        cellShadowIm[6].src = qp1 + qp3 + "MpSPGckXYIKcVAIo7N1XRw562VZN19eVD7aC6Tm6JNxSM0uaHS3fURta/VS6WI8DPF4KADs=";
+        cellShadowIm[7].src = qp1 + qp3 + "MZSPGckXYIKcVAIo3t1cRw4CXlZZ11ia4hWVm9lWLyqfMEnN9KTvao5J1TKh4soYKgAAOw==";
+        cellShadowIm[8].src = qp1 + qp3 + "NJSPGckXYIKcVAIo7N1XRw4CDzaK0zZ+3dldUQl6GczJJYW6GcqKOh37AVfCSsU1DPmUygIAOw==";
+        bombFlagged = new Image(16, 16);
+        bombFlagged.src = qp1 + "EAAPAPIAAAAAAHt7e729vf8AAP///wAAAAAAAAAAACwAAAAAEAAPAAADOUi63NJwiaCEvdgGSvIY2VZZ3xdyZAliYpeaLIrBV5sJwDliebzjgKDPFSwWNTKjEfm7MSebqFSaAAA7";
+        bombDisarmed = new Image(16, 16);
+        bombDisarmed.src = "data:image/gif;base64,R0lGODlhEAAQAPIEAAAAAHsAAHt7e729vf///wAAAAAAAAAAACH5BAUKAAQALAAAAAAQABAAAAIrlI9pw+0vnnTxhTAruzc33knaAHoWJk6A+aypA8Qu1cj2PGi3TE+s3wM6CgA7";
+        bombRevealed = new Image(16, 16);
+        bombRevealed.src = qp1 + "EAAQAPEAAAAAAHt7e729vf///ywAAAAAEAAQAAACNIyPacLtHx4DUkRJ5RUUeM81G/d9zuYNQ5lZTbqWIsnW7lSDDJq3Y3560UC+SiuIqYwqjgIAOw==";
+        bombMisFlagged = new Image(16, 16);
+        bombMisFlagged.src = qp1 + "EAAQAPIAAAAAAHt7e729vf8AAP///wAAAAAAAAAAACwAAAAAEAAQAAADRBi63CowyhkmBFbUMSSOnAaFQFkKoTgOZpmqAsARLhtVl8xyJ1S1OlYLZuIIP0SdEolbFTs30LEWRUFjUp/VIwk1M5MEADs=";
+        bombDeath = new Image(16, 16);
+        bombDeath.src = qp1 + "EAAQAPEAAAAAAHt7e/8AAP///ywAAAAAEAAQAAACNIyPacLtHx4DUkRJ5RUUeM81G/d9zuYNQ5lZTbqWIsnW7lSDDJq3Y3560UC+SiuIqYwqjgIAOw==";
+        bombQuestion = new Image(16, 16);
+        bombQuestion.src = qp1 + "EAAQAPEAAAAAAHt7e729vf///ywAAAAAEAAQAAACOZyPKcknYYScVAY4KNiA3ihtYWdhkyigj1ml5ApqL5zJ1VefM922eKUqxUY3Vm/yWV2WzKWyCQ0UAAA7";
+        bombShadow = new Image(16, 16);
+        bombShadow.src = qp1 + qp3 + "NpSPGckXYIKcYEoAhb0bx/dgGOhplyieX4lWpSq0odHW4mq72WnPZijzcWS6j6VyhABzKWatAAA7";
+        blankCell = new Image(16, 16);
+        blankCell.src = qp1 + qp3 + "KpSPGckXYIKcVAIoqn541xt5E5iJVmdyoUmmasmi8Sq2Kchd+q7n/A8oAAA7";
+        faceDead = new Image(26, 26);
+        faceDead.src = qp1 + "GgAaAPIAAAAAAHt7e729vf//AP///wAAAAAAAAAAACwAAAAAGgAaAAADgBi63M4ikEmrvTNKzK/eQiiOJMlkZVqehAq8b8qW72Db8TiPwO3jugUq1Pv9AKKdoNgrDprAD4h4c+KqoZ0Tet1KUVbj8dtais9I7VmcFpbDsJqvrRhuj1iyiMmOKs1rT0luJGFzQXVlPHBIiFM0cTKEKpRZQlIPmQ2Ymp2cnZoJADs=";
+        faceSmile = new Image(26, 26);
+        faceSmile.src = qp1 + "GgAaAPIAAAAAAHt7e729vf//AP///wAAAAAAAAAAACwAAAAAGgAaAAADfxi63M4ikEmrvTNKzK/eQiiOJMlkZVqehAq8b8qW72Db8TiPwO3jugUq1Pv9AKKdoGg8hpTMGi76FLaWPulAu/2AsM0mcscMZ72oshlIvqlxbvQVvD3G5aIyjIvE59ddVQpDRGZ9gl88ajlJVi57Mo4qk4gtD5eYXpibAZqcmAkAOw==";
+        faceWin = new Image(26, 26);
+        faceWin.src = qp1 + "GgAaAPIAAAAAAHt7AHt7e729vf//AP///wAAAAAAACwAAAAAGgAaAAADhCi63M5DlEmrvTNKzK/eQyiOJMlkZVqehQq8b8qWL2Hb8TiPwO3jugUq1Pv9AKLdoGg8hpRFmLRGQH5AS5y0uq1eUb0wjFsLf1vLYoDKDWjPxKYcuWPKfXQhOos73qxQeF1AcCJ2TVaFhneJioaHOUl6LlIykyqYT0JXD50NnJ6hoKGeCQA7";
+        faceWait = new Image(26, 26);
+        faceWait.src = qp1 + "GgAaAPIAAAAAAHt7e729vf//AP///wAAAAAAAAAAACwAAAAAGgAaAAADgxi63M4ikEmrvTNKzK/eQiiOJMlkZVqehNqk7BoMNK2YCyrONVAPgVFs9xv4fsHQMFI0NpNLntFHPQKVuRazR50iP6Bt0fodSrmAdNoGRp17zas5Tg9G6UVolkhT+2t6CjpidTt7QnhJWIJaQm83jowuEDKSKpeLEmAPnC+dn56gogEJADs=";
+        faceOoh = new Image(26, 26);
+        faceOoh.src = qp1 + "GgAaAPIAAAAAAICAAMDAwP//AICAgP///wAAAAAAACwAAAAAGgAaAAADi0i63M6ClEmrvTNKzK/eQiiOJMlkZVqehQq8b8qW72Db8TiPwO3jugUq1Pv9AKKdoBgABG7N5wD5ARFxNWyRuisOolDnDdk1moHls5EsbC3XWR9bgfLamlPpuDq0e/0hSnZ4Ynt8bldjcVNJbSR2R0F0iCKLU1SNky4wmJJWKqB8VQ+kDaOlqKeopQkAOw==";
+        facePirate = new Image(26, 26);
+        facePirate.src = qp1 + "GgAaAPIAAAAAAHt7e729vf//AP///4CAAAAAAAAAACwAAAAAGgAaAAADhxi63M4ikEmrvTNKzK/eQiiOJMlkZVqehAq8b8qW7zAAdjzOI27fv9tugQr5coWgMMQT+AqvpHLZ9MGsRwCT2HL+rrmjkGeFAqRTLTk6TX9A3nZbzTXK5+9iVpndKvRBV2JaeV12d0uFJGJ8Q3+GIjWBhCJNi1cydSqbfhJvD6ANn6Gko6ShCQA7";
+        checked = new Image(10, 10);
+        checked.src = qp1 + "CgAKAPAAAAAAAL29vSwAAAAACgAKAAACEYyPqcsBDJ6RLh4bac2KL20UADs=";
+        notchecked = new Image(10, 10);
+        notchecked.src = ntck;
+        var bordertl = qp1 + "CgAK" + qp2 + "CgAKAAACFJSPqRLtbd6LErIaaNWSNwB4AVgAADs=",
+            bordertb = qp1 + "BAAK" + qp2 + "BAAKAAACCZRvocvtC6KMBQA7",
+            bordertr = qp1 + "CgAK" + qp2 + "CgAKAAACFZR/gRgQDx9wEc5qKb646Tp9mbIBBQA7",
+            borderlr = qp1 + "CgAE" + qp2 + "CgAEAAACC5SCCWCpfFxYTa4CADs=",
+            borderjointl = qp1 + "CgAK" + qp2 + "CgAKAAACFJSCCWHpdlxqEtF6ZX4RdwVsAQAUADs=",
+            borderjointr = qp1 + "CgAK" + qp2 + "CgAKAAACFJSCCWCp4NyKj6JpMdVxwQ0dHVAAADs=",
+            borderbl = qp1 + "CgAK" + qp2 + "CgAKAAACFZSCCWHpdlxqEtF6ZX4RBwCG4CeKBQA7",
+            borderbr = qp1 + "CgAK" + qp2 + "CgAKAAACE5SCCWCp4NyKj6JpMdVx+Q+GSwEAOw==";
+
+        function getCookie(Name) {
+            var search = Name + "=";
+            if (document.cookie.length > 0) {
+                offset = document.cookie.indexOf(search);
+                if (offset != -1) {
+                    offset += search.length;
+                    end = document.cookie.indexOf(";", offset);
+                    if (end == -1) end = document.cookie.length;
+                    return decodeURI(document.cookie.substring(offset, end));
+                }
+            }
+        }
+
+        function setCookie(name, value) {
+            document.cookie = name + "=" + encodeURI(value) + "; expires=Fri,31 Dec " + (new Date().getFullYear() + 10) + " 23:59:00 GMT";
+        }
+        gameFormat = getCookie("gameFormat");
+        if (gameFormat == "Custom") {
+            maxX = parseInt(getCookie("maxX"));
+            maxY = parseInt(getCookie("maxY"));
+            maxNumBombs = parseInt(getCookie("maxNumBombs"));
+        } else if (gameFormat == "Intermediate") {
+            maxX = 15;
+            maxY = 15;
+            maxNumBombs = 40;
+        } else if (gameFormat == "Expert") {
+            maxX = 30;
+            maxY = 15;
+            maxNumBombs = 99;
+        } else {
+            maxX = 7;
+            maxY = 7;
+            maxNumBombs = 10;
+            gameFormat = "Beginner";
+        }
+        maxLegalBombs = Math.round((maxX + 1) * (maxY + 1) / 3);
+        if (isNaN(maxX) || maxX < 7 || maxX > 31 || isNaN(maxY) || maxY < 7 || maxY > 24 || isNaN(maxNumBombs) || maxNumBombs < 1 || maxNumBombs > maxLegalBombs) {
+            maxX = 7;
+            maxY = 7;
+            maxNumBombs = 10;
+            gameFormat = "Beginner";
+        }
+        setCookie("gameFormat", gameFormat);
+        smileMargin = ((maxX + 1) * 16 - (13 * 6 + 26)) / 2;
+        zoomLevel = Number(getCookie("zoomLevel"));
+        if (!(zoomLevel >= -2 && zoomLevel <= 12)) zoomLevel = 4;
+
+        function zoomPower() {
+            return Math.pow(2, zoomLevel / 4);
+        }
+
+        function gwidth() {
+            return (36 + 16 * maxX) * zoomPower();
+        }
+
+        function gheight() {
+            return (99 + 16 * maxY) * zoomPower();
+        }
+
+        function forceFocus() {
+            document.checkForm.modeCheck.focus();
+        }
+        pointingAtX = -1;
+        pointingAtY = -1;
+
+        function cursorClearLoc(x, y) {
+            if ((pointingAtX == x) && (pointingAtY == y)) {
+                pointingAtX = -1;
+                pointingAtY = -1;
+            }
+        }
+
+        function cursorHoldLoc(x, y) {
+            pointingAtX = x;
+            pointingAtY = y;
+            forceFocus();
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="fr">
+    <meta name="description" content="Jouez au Démineur gratuitement en ligne. Simple et classique, avec un look traditionnel.">
+    <title>Démineur en ligne | Jouer au jeu classique gratuitement</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <link rel="canonical" href="https://minesweeper.one/démineur/">
+    <style type="text/css">
+        .menu_margin {
+            margin: 5px 0px 5px 0px;
+            width: 148px;
+            text-align: left;
+        }
+
+        .menu_title {
+            font-family: helvetica;
+            font-size: 12px;
+            padding-left: 5px;
+        }
+
+        .menu_dropdown {
+            position: absolute;
+            visibility: hidden;
+            width: 150px;
+            top: 20px;
+            z-index: 5;
+            text-align: left;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: default;
+        }
+
+        a:link,
+        a:visited,
+        a:active {
+            color: #000;
+        }
+
+        a:hover {
+            color: #00C;
+            text-decoration: underline;
+        }
+
+        .menu_item {
+            font-family: helvetica;
+            font-size: 12px;
+        }
+
+        .menu_divider {
+            font-family: helvetica;
+            font-size: 2px;
+        }
+
+        .focus_box {
+            width: 40px;
+            position: absolute;
+            z-index: 2;
+            top: 400px;
+            left: -2000px;
+        }
+
+        .pause {
+            text-align: center;
+            visibility: hidden;
+            color: #fff;
+            background-color: #000;
+            border-style: solid;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .disarm {
+            opacity: 0.9;
+            text-align: center;
+            visibility: hidden;
+            background-color: #DDAA77;
+            border-style: solid;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .disarmCountdown {
+            font-family: Courier;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .disarm input {
+            font-size: 80%;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        body {
+            font-family: Verdana;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .closeb {
+            font-size: 12px;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        #content {
+            width: 728px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body bgcolor="#C0C0C0" onclick="clickInBrowser()">
+    <div class="focus_box">
+        <form name="checkForm"><input type="checkbox" onclick="cellTouch()" name="modeCheck"></form>
+    </div>
+    <div id="toppane">
+    </div>
+    <br>
+    <script>
+        document.write('<div id="container" style="width:' + gwidth() + 'px;height:' + gheight() + 'px;"><div id="gamediv" style="transform-origin:center top;transform:scale(' + zoomPower() + ');">');
+    </script>
+    <div id="divMenuGame" class="menu_dropdown" style="left:10px;">
+        <table border="1" bgcolor="#C0C0C0">
+            <tr>
+                <td class="menu_item" nowrap="nowrap">
+                    <script>
+                        insnc("imNew");
+                    </script>&nbsp;<a onclick="return menuItemClick('New')">Nouvelle partie &nbsp; &nbsp; &nbsp;F2</a>&nbsp;<br>
+                    <script>
+                        insnc("imPause");
+                    </script>&nbsp;<a onclick="menuItemClick('Pause')">Pause &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; P</a>&nbsp;<br>
+                    <hr>
+                    <script>
+                        insnc("imBeginner");
+                    </script>&nbsp;<a onclick="menuItemClick('Beginner')">Débutant </a>&nbsp;<br>
+                    <script>
+                        insnc("imIntermediate");
+                    </script>&nbsp;<a onclick="menuItemClick('Intermediate')">Intermédiaire </a>&nbsp;<br>
+                    <script>
+                        insnc("imExpert");
+                    </script>&nbsp;<a onclick="menuItemClick('Expert')">Avancé </a>&nbsp;<br>
+                    <script>
+                        insnc("imCustom");
+                    </script>&nbsp;<a onclick="menuItemClick('Custom')">Personnalisé </a>&nbsp;<br>
+                    <hr>
+                    <script>
+                        insnc("");
+                    </script>&nbsp;<a onclick="return menuItemClick('Personal')">Meilleurs résultats</a>&nbsp;<br>
+                    <hr>
+                    <script>
+                        insnc("");
+                    </script>&nbsp;<a onclick="return menuItemClick('Languages')">Langues</a>&nbsp;<br>
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="divMenuOpt" class="menu_dropdown" style="left:53px;">
+        <table border="1" bgcolor="#C0C0C0">
+            <tr>
+                <td class="menu_item" nowrap="nowrap">
+                    <script>
+                        insnc("imZoomIn");
+                    </script>&nbsp;<a onclick="return zoomIn()" title="Le Zoom fonctionne sur la plupart des navigateurs modernes.">Zoom avant</a><br>
+                    <script>
+                        insnc("imZoomOut");
+                    </script>&nbsp;<a onclick="return zoomOut()" title="Le Zoom fonctionne sur la plupart des navigateurs modernes.">Zoom arrière</a><br>
+                    <hr>
+                    <a onclick="return menuItemClick('First')" title="Le premier coup ouvre toujours une série de cellules utiles.">
+                        <script>
+                            insnc("imFirst");
+                        </script>&nbsp;Démarrage&nbsp;sans&nbsp;danger</a><br>
+                    <a onclick="return menuItemClick('Marks')" title="Le deuxième clic droit transforme un drapeau en point d'interrogation.">
+                        <script>
+                            insnc("imMarks");
+                        </script>&nbsp;Points&nbsp;d'interrogation (?)</a><br>
+                    <a onclick="return menuItemClick('Area')" title="Cliquer sur une cellule numérotée ouvrira toutes ses voisines.">
+                        <script>
+                            insnc("imUseMacro");
+                        </script>&nbsp;Voisinage&nbsp;sûr</a><br>
+                    <a onclick="return menuItemClick('Remaining')" title="Lorsque toutes les bombes sont découvertes, cliquez sur le compteur de bombes 000 pour ouvrir toutes les cellules restantes.">
+                        <script>
+                            insnc("imRemaining");
+                        </script>&nbsp;Ouvrir&nbsp;les&nbsp;cellules&nbsp;restantes</a>&nbsp;<br>
+                    <a onclick="return menuItemClick('Disarm')" title="Offre la possibilité d'annuler le dernier coup. Ne comptera pas comme une partie à haut score.">
+                        <script>
+                            insnc("imDisarm");
+                        </script>&nbsp;Désarmer&nbsp;(annuler)</a>&nbsp;<br>
+                    <a onclick="return menuItemClick('Hints')" title="Affichez un indice en pointant une cellule et en appuyant sur la lettre H.">
+                        <script>
+                            insnc("imHints");
+                        </script>&nbsp;Indices&nbsp;(appuyer sur H)</a>&nbsp;<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="divMenuHelp" class="menu_dropdown" style="left:110px;">
+        <table border="1" bgcolor="#C0C0C0">
+            <tr>
+                <td class="menu_item" nowrap="nowrap">
+                    &nbsp;<a onclick="return menuItemClick('About')">À propos du Démineur</a>&nbsp;<br>
+                    <hr> &nbsp;
+                    <a onclick="return menuItemClick('Instructions')">Instructions et règles</a>&nbsp;<br> &nbsp;
+                    <a onclick="return menuItemClick('Example')">Exemple de résolution</a>&nbsp;<br> &nbsp;
+                    <a onclick="return menuItemClick('History')">Histoire</a><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="divDisarm" class="disarm">
+        <p>Une mine explosera dans<br>
+            <span class="disarmCountdown" id="detonateCountdown">3.0</span><br>
+            <input type="button" onclick="disarmMine();" value="Désarmer la mine"><br>
+            <input type="button" onclick="acceptFate();" value="Accepter votre destin">
+        </p>
+    </div>
+    <div id="divPause" class="pause">
+        <p>EN PAUSE</p>
+        <p><input type="button" onclick="doUnpause();" value="Reprendre"></p>
+    </div>
+    <table id="mainmenu" border="0" cellspacing="0" cellpadding="0" class="menu_margin">
+        <tr>
+            <td class="menu_title"><a onclick="return menuClick('divMenuGame')" onmouseover="return menuMouseOver('divMenuGame')">Jeu</a></td>
+            <td class="menu_title"><a onclick="return menuClick('divMenuOpt')" onmouseover="return menuMouseOver('divMenuOpt')">Options</a></td>
+            <td class="menu_title"><a onclick="return menuClick('divMenuHelp')" onmouseover="return menuMouseOver('divMenuHelp')">Aide</a></td>
+        </tr>
+    </table>
+    <div id="divBoard" style="font-size:0px;" oncontextmenu="return false;">
+        <script>
+            document.write('<img src="' + bordertl + '" height="10" width="10" name="bordertl">');
+            for (var j = 0; j <= maxX; j++) document.write('<img src="' + bordertb + '" height="10" width="16">');
+            document.write('<img src="' + bordertr + '" height="10" width="10"><br>');
+            document.write('<img src="' + borderlr + '" height="26" width="10">');
+            document.write('<a onclick="return bombCountClick()"><img src="' + timeDigits[0].src + '" border="0" name="bomb100s" width="13" height="23"><img src="' + timeDigits[0].src + '" border="0" name="bomb10s" width="13" height="23"><img src="' + timeDigits[0].src + '" border="0" name="bomb1s" width="13" height="23"></a>');
+            document.write('<a onclick="return faceClick()"><img src="' + faceWait.src + '" name="face" style="margin-left:' + smileMargin + 'px;margin-right:' + smileMargin + 'px;" border="0" width="26" height="26"></a>');
+            document.write('<img src="' + timeDigits[0].src + '" border="0" name="time100s" width="13" height="23" alt=""><img src="' + timeDigits[0].src + '" border="0" name="time10s" width="13" height="23"><img src="' + timeDigits[0].src + '" border="0" name="time1s" width="13" height="23">');
+            document.write('<img src="' + borderlr + '" height="26" width="10"><br>');
+            document.write('<img src="' + borderjointl + '" height="10" width="10">');
+            for (var j = 0; j <= maxX; j++) {
+                document.write('<img src="' + bordertb + '" height="10" width="16">');
+            }
+            document.write('<img src="' + borderjointr + '" height="10" width="10"><br>');
+            for (var i = 0; i <= maxY; i++) {
+                document.write('<img src="' + borderlr + '" height="16" width="10">');
+                for (var j = 0; j <= maxX; j++) document.write('<a onClick="" onmouseover="cursorHoldLoc(' + j + ',' + i + ')" onmouseout="cursorClearLoc(' + j + ',' + i + ')" ondragstart="ignoreDragging()" ondrag="ignoreDragging()" onmousedown="showMouseDown();" onmouseup="cellClick(' + j + ',' + i + ', event)"><img src="' + blankCell.src + '" name="cellIm' + j + '_' + i + '" border="0" height="16" width="16"></a>');
+                document.write('<img src="' + borderlr + '" border="0" height="16" width="10"><br>');
+            }
+            document.write('<img src="' + borderbl + '" height="10" width="10">');
+            for (var j = 0; j <= maxX; j++) {
+                document.write('<img src="' + bordertb + '" height="10" width="16">');
+            }
+            document.write('<img src="' + borderbr + '" height="10" width="10"><br>');
+        </script>
+    </div>
+    </div>
+    </div>
+    <br>
+    <div id="middlepane">
+    </div>
+    <br>
+    <div id="content">
+        <div id="window1">
+            <h1>Démineur</h1>
+            <p>Bienvenue dans le Démineur, l'un des jeux vidéo de logique les plus populaires pour jouer seul ! Il s'agit d'une version en ligne accessible à tous gratuitement. Amusez-vous bien !</p>
+            <p>Ce jeu en ligne Démineur a été créé en 2021 comme une nouvelle version du jeu écrit par <a href="http://www.chezpoor.com/minesweeper/minesweeper.html">Shep Poor</a> et distribué sous licence Creative Commons. Minesweeper Original Game © 1981-1995
+                Microsoft Corp.</p>
+            <h2>Information générale</h2>
+            <p>Le Démineur est un jeu de logique ou casse-tête qui consiste en un plateau de cellules. Au départ, chaque cellule est couverte, et le joueur ne sait pas ce qui est caché sous chacune d’entre elles. Lors de son premier coup, le joueur doit
+                cliquer n'importe où sur le plateau. Cela découvrira la cellule sur laquelle il a cliqué, ainsi que certaines des cellules environnantes. Certaines de ces cellules comportent des chiffres. Un nombre indique combien de mines se trouvent
+                dans les cellules environnantes. Le but est d'utiliser ces chiffres pour déduire où se trouvent les mines. Si vous trouvez l'emplacement d'une mine, vous pouvez la signaler en cliquant dessus avec le bouton droit de la souris. En marquant
+                les mines, vous déduirez également que certaines cellules ne peuvent pas contenir de mines. Vous pouvez les découvrir en toute sécurité en utilisant le bouton gauche de la souris.</p><input type="button" value="Fermer" onclick="hideallwindows();">
+        </div>
+        <div id="window2">
+            <h2>Instructions et règles</h2>
+            <p>Voici quelques conseils qui peuvent vous être utiles :</p>
+            <ol>
+                <li>Vous pouvez cliquer sur le smiley jaune heureux (ou parfois triste) pour redémarrer le jeu.</li>
+                <li>Vous pouvez faire un zoom avant ou arrière dans le jeu en utilisant le menu Options.</li>
+                <li>Si vous cliquez avec le bouton gauche de la souris sur une cellule comportant un chiffre et que les cellules qui l'entourent comportent déjà le même nombre de drapeaux que le chiffre sur lequel vous venez de cliquer, les autres cases adjacentes
+                    couvertes restantes seront révélées. Cette fonction est appelée <b>voisinage sûr</b>.</li>
+                <li>Le but du jeu est de découvrir toutes les cellules qui ne contiennent pas de mines. Vous n'avez pas besoin de planter des drapeaux !</li>
+            </ol>
+            <p>Voici comment fonctionnent les options disponibles dans ce jeu :</p>
+            <ol>
+                <li><b>Démarrage sans danger</b> – si cette option est activée lorsque vous effectuez un premier clic, vous trouverez toujours une cellule vide, ce qui vous permettra de découvrir une grande surface. Lorsque cette option est désactivée, le
+                    plateau est créé de manière entièrement aléatoire, de sorte qu'avec votre premier clic, vous pouvez trouver un seul chiffre, ou même une mine !</li>
+                <li><b>Point d'interrogation</b> – lorsque cette option est activée, vous transformerez un drapeau en point d'interrogation en cliquant dessus avec un clic droit. Cliquez une nouvelle fois pour supprimer le point d'interrogation. Si cette
+                    option est désactivée, le clic droit permet uniquement de planter un drapeau ou de le supprimer.
+                </li>
+                <li><b>Voisinage sûr</b> – si cette option est activée, vous pouvez cliquer sur un chiffre qui a le nombre correspondant de mines marquées autour de lui afin de découvrir les autres cellules environnantes. Si cette option est désactivée, cliquer
+                    sur un chiffre n'aura aucun effet.</li>
+                <li><b>Ouvrir les cellules restantes</b> – si cette option est activée lorsque le compteur numérique du nombre de mines restantes indique "000", après avoir trouvé toutes les mines et les avoir marquées avec des drapeaux, vous pouvez cliquer
+                    sur ce compteur numérique pour découvrir toutes les cellules restantes.</li>
+                <li><b>Désarmer</b> – lorsque cette option est activée et que vous cliquez sur une mine, vous avez trois secondes pour vous sauver. Si l'option est désactivée, vous mourrez tout simplement immédiatement.</li>
+                <li><b>Indice</b> – lorsque cette option est activée, vous pouvez passer votre souris sur une cellule et appuyer sur H pour révéler ce qui est caché en dessous.</li>
+            </ol><input type="button" value="Fermer" onclick="hideallwindows();">
+        </div>
+        <div id="window3">
+            <h2>Exemple de résolution</h2>
+            <p>Ce petit tutoriel vous montrera comment résoudre une partie de Démineur.</p>
+            <table>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 1" id="img1" src="../board1.png" loading="lazy" width="148" height="184"></td>
+                    <td>Dans cet exemple, nous commençons par un niveau de difficulté Débutant. Le nombre de mines restantes est indiqué sur l'écran numérique situé dans le coin supérieur gauche du plateau du Démineur. Il indique "10", ce qui signifie que
+                        nous avons 10 mines à trouver. Commençons par cliquer avec le bouton gauche de la souris sur la cellule choisie au hasard. Dans cet exemple, nous allons choisir la cellule marquée d'un cercle rouge.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 2" id="img2" src="../board2.png" loading="lazy" width="148" height="184"></td>
+                    <td>Après notre clic initial, un certain nombre de cellules sont découvertes. Certaines des cellules découvertes comportent des chiffres, d'autres sont vides. Les nombres indiquent combien de mines sont cachées sous les cellules couvertes
+                        environnantes. Remarquez la case avec un "1", marquée par un cercle rouge. Il n'y a qu'une seule cellule couverte adjacente (marquée par un cercle marron). Et puisqu'il n'y a qu'une seule mine adjacente, alors la mine doit se trouver
+                        sous cette cellule couverte. Plaçons un drapeau sur cette cellule en faisant un clic droit dessus.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 3" id="img3" src="../board3.png" loading="lazy" width="148" height="184"></td>
+                    <td>Maintenant que nous avons planté notre premier drapeau, nous pouvons commencer à découvrir d'autres cellules. Regarder la cellule avec un "1", indiquée par le cercle rouge. Nous savons qu'il n'y a qu'une seule mine dans les trois cellules
+                        situées au-dessus, mais nous avons déjà trouvé cette mine et l'avons marquée avec un drapeau. Cela signifie qu’il n'y a pas de mines dans les deux cellules restantes (marquées d'un cercle marron). Nous pouvons maintenant les découvrir
+                        en toute sécurité en cliquant dessus avec un clic gauche de la souris.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 4" id="img4" src="../board4.png" loading="lazy" width="148" height="184"></td>
+                    <td>Nous sommes maintenant prêts à planter notre deuxième drapeau. Comme précédemment, nous pouvons trouver une cellule avec un "1" (marquée par un cercle rouge), qui n'a qu'une seule cellule couverte autour d'elle (marquée par un cercle
+                        marron). La mine doit être là, et nous pouvons donc planter un drapeau en toute sécurité en cliquant avec un clic droit de la souris sur cette cellule couverte.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 5" id="img5" src="../board5.png" loading="lazy" width="148" height="184"></td>
+                    <td>Après avoir planté le deuxième drapeau, nous remarquons à nouveau des cellules avec des "1", qui ont déjà des drapeaux dans leur voisinage. Deux de ces cellules sont marquées par des cercles rouges. Puisque ces deux cellules ont déjà
+                        un drapeau à proximité, il ne peut pas y avoir de mine dans les autres cellules couvertes adjacentes (marquées par des cercles marrons). Nous pouvons faire un clic gauche sur ces cellules pour les découvrir.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 6" id="img6" src="../board6.png" loading="lazy" width="148" height="184"></td>
+                    <td>Là encore, il y a une cellule avec un "1", pour laquelle la mine adjacente a déjà été trouvée. Faisons un clic gauche sur la seule cellule couverte restante (marquée d'un cercle marron).</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 7" id="img7" src="../board7.png" loading="lazy" width="148" height="184"></td>
+                    <td>Faisons maintenant attention au "3" marqué d'un cercle rouge. Il y a trois mines dans les cellules adjacentes, et il y a trois cellules adjacentes couvertes au total ; une à gauche a déjà été marquée d'un drapeau, et les deux autres
+                        au-dessus ne sont toujours pas marquées. Il n'y a pas d'autre solution - les deux cellules couvertes doivent contenir des mines car il y a trois mines dans les cellules adjacentes au chiffre "3". Plantons des drapeaux dans ces
+                        deux cellules.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 8" id="img8" src="../board8.png" loading="lazy" width="148" height="184"></td>
+                    <td>Maintenant, regardons les deux cellules contenant le chiffre "2", marquées par des cercles rouges. Ces deux cellules n'ont que deux cellules adjacentes couvertes, marquées d'un cercle marron. Ces deux cellules adjacentes doivent donc
+                        contenir des mines. Plantons-y nos drapeaux.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 9" id="img9" src="../board9.png" loading="lazy" width="148" height="184"></td>
+                    <td>Nous pouvons maintenant identifier quelques cellules qui ont déjà le nombre approprié de mines signalées d’un drapeau autour d'elles. Ces deux exemples sont marqués par des cercles rouges. Comme le nombre de mines dans les cellules
+                        adjacents correspond aux chiffres, cela signifie que les autres cellules couvertes ne peuvent pas contenir de mines. Nous pouvons donc les découvrir en cliquant dessus avec un clic gauche de la souris. Découvrons tous les cellules
+                        marquées d'un cercle marron.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 10" id="img10" src="../board10.png" loading="lazy" width="148" height="184"></td>
+                    <td>L'une des cellules (marquée d'un cercle rouge) contient le chiffre "2" et n'est entourée que de deux cellules couvertes, dont l'une est déjà marquée d'un drapeau. Nous pouvons également marquer l'autre cellule avec un drapeau. Faisons
+                        un clic droit sur la cellule avec un cercle marron.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 11" id="img11" src="../board11.png" loading="lazy" width="148" height="184"></td>
+                    <td>Dans l'étape suivante, nous voyons trois cellules avec le chiffre "1", qui ont toutes déjà une mine dans leur voisinage. Toutes les autres cellules adjacentes peuvent alors être découvertes en toute sécurité. Elles sont indiquées par
+                        des cercles marrons.</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 12" id="img12" src="../board12.png" loading="lazy" width="148" height="184"></td>
+                    <td>Concentrons-nous maintenant sur le chiffre "2", marqué d'un cercle rouge. Comme précédemment, il n'a que deux cellules couvertes autour de lui, dont l'une a déjà été marquée. Nous pouvons donc planter le drapeau dans l'autre (marquée
+                        d'un cercle marron). Remarquez qu'au fur et à mesure que nous le faisons, notre compteur de mines, situé dans la partie supérieure gauche du plateau du Démineur, indique que le nombre de mines restantes passe d’un à zéro. Cela
+                        signifie que nous pouvons maintenant découvrir en toute sécurité toutes les cellules restantes, car elles ne contiennent sûrement pas de mines - puisque toutes les mines ont déjà été trouvées !</td>
+                </tr>
+                <tr>
+                    <td><img alt="Démineur, exemple de résolution, partie 13" id="img13" src="../board13.png" loading="lazy" width="148" height="184"></td>
+                    <td>Nous avons gagné la partie ! Le compteur du temps situé dans le coin supérieur droit du plateau du Démineur indique qu'il nous a fallu exactement trois minutes pour terminer la partie.</td>
+                </tr>
+            </table><input type="button" value="Fermer" onclick="hideallwindows();">
+        </div>
+        <div id="window4">
+            <h2>Histoire</h2>
+            <p>Le Démineur est un vieux jeu de logique conçu il y a plus de 50 ans. Il a été popularisé après avoir été inclus dans Microsoft Windows 3.1 dans le but d'aider les gens à apprendre à utiliser la souris de l'ordinateur et de leur enseigner l'utilité
+                du clic gauche et du clic droit.</p>
+            <p>Les créateurs du Démineur, Robert Donner et Kurt Johnson, se sont inspirés du jeu Relentless Logic de 1985, de l'ancien jeu de société Battleship, ainsi que du jeu vidéo Hunt the Wumpus.</p>
+            <p>Le Démineur a très vite conquis le cœur de nombreux joueurs dans le monde entier, et figure désormais sur toutes les listes des jeux les plus joués de tous les temps. Une rumeur circule disant qu’à une époque même Bill Gates aimait jouer au
+                Démineur!</p><input type="button" value="Fermer" onclick="hideallwindows();">
+        </div>
+        <div id="window5">
+             
+        </div>
+         
+
+        <div id="window7">
+            <h2>Vos meilleurs temps</h2>
+            <table cellpadding=4>
+                <tr>
+                    <td><b>Débutant :</b></td>
+                    <td align="right"><b><span id="bestBeginner"></span></b></td>
+                </tr>
+                <tr>
+                    <td><b>Intermédiaire :</b></td>
+                    <td align="right"><b><span id="bestIntermediate"></span>
+</b></td>
+                </tr>
+                <tr>
+                    <td><b>Avancé :</b></td>
+                    <td align="right"><b><span id="bestExpert"></span>
+</b></td>
+                </tr>
+            </table>
+            <p>
+                <input type="button" name="resetScoresButton" value="Réinitialiser les scores" onclick="scoresReset();">
+                <input type="button" value="Fermer" onclick="hideallwindows();">
+            </p>
+        </div>
+
+        <div id="window8">
+            <h2>Paramètres personnalisés</h2>
+            <table border="0">
+                <tr>
+                    <td>Hauteur du plateau :</td>
+                    <td><input type="text" size="3" name="maxY" value="" id="maxY"></td>
+                </tr>
+                <tr>
+                    <td>Largeur du plateau :</td>
+                    <td><input type="text" size="3" name="maxX" value="" id="maxX"></td>
+                </tr>
+                <tr>
+                    <td>Nombre de bombes :</td>
+                    <td><input type="text" size="3" name="maxNumBombs" value="" id="maxNumBombs"></td>
+                </tr>
+            </table>
+            <p>
+                <input type="button" name="OKButton" value="OK" onclick="launchGame()">
+                <input type="button" name="CancelButton" value="Annuler" onclick="hideallwindows();">
+            </p>
+        </div>
+
+        <div id="window9">
+            <h2>VOUS GAGNEZ !</h2>
+            <h3>Félicitations !</h3>
+            <p>Temps de jeu : <span id="gameTime"></span><br><br>
+                <span id="gameFormat2"></span><br><br> Nombre de clics : <span id="numMoves"></span></p>
+            <h3 id="nr"></h3>
+            <input type="button" name="CancelButton" value="Fermer" onclick="hideallwindows();">
+        </div>
+    </div>
+    <br>
+    <div id="bottompane">
+    </div>
+    <br>
+    <script>
+        function hideallwindows() {
+            for (var i = 1; i < 10; i++) document.getElementById("window" + i).style.display = "none";
+        }
+        hideallwindows();
+        var dim1 = document.getElementById("container").getBoundingClientRect();
+        var dim2 = document.getElementById("content").getBoundingClientRect();
+        var rt = document.body.scrollWidth - Math.min(dim1.left, dim2.left) + 10;
+        var tp = dim1.top;
+        document.write('<div id="leftpane" style="position:absolute;right:' + rt + 'px;top:' + tp + 'px;text-align:right;">');
+    </script>
+    </div>
+    <script>
+        var lt = Math.max(dim1.right, dim2.right) + 10;
+        document.write('<div id="rightpane" style="position:absolute;left:' + lt + 'px;top:' + tp + 'px;text-align:left;">');
+    </script>
+    </div>
+    <script>
+        function closep(n) {
+            var t = ["toppane", "middlepane", "bottompane", "leftpane", "rightpane"];
+            var dv = document.getElementById(t[n]);
+            dv.style.display = "none";
+            rsz();
+        }
+
+        function ev(a, l, v) {
+            var opt = {
+                'event_category': l
+            };
+            if (v != null) opt['event_label'] = v;
+            gtag('event', a, opt);
+        }
+        setInterval(function() {
+            ev('time', '4minutes');
+        }, 240000);
+        window.onbeforeunload = function() {
+            ev('time', 'unload');
+            return undefined;
+        };
+        useQuestionMarks = !(getCookie("useQuestionMarks") == 'false');
+        useMacroOpen = !(getCookie("useMacroOpen") == 'false');
+        useFirstClickUseful = !(getCookie("useFirstClickUseful") == 'false');
+        openRemaining = (getCookie("openRemaining") == 'true');
+        allowDisarm = (getCookie("allowDisarm") == 'true');
+        allowHints = !(getCookie("allowHints") == 'false');
+        maxCells = (maxX + 1) * (maxY + 1) - 1;
+        maxStackHeight = 300;
+        cellArray = new Array(maxCells + 1);
+
+        function constructCell() {
+            this.isBomb = false;
+            this.isExposed = false;
+            this.isFlagged = false;
+            this.isDisarmed = false;
+            this.isQuestion = false;
+            this.isMarked = false;
+            this.neighborBombs = 0;
+        }
+        for (var l = 0; l <= maxCells; l++) cellArray[l] = new constructCell();
+        markedArray = new Array(maxStackHeight);
+        dead = false;
+        win = false;
+        bombsFlagged = 0;
+        cellsOpen = 0;
+        markedCount = -1;
+        highestStackHeight = -1;
+        numMoves = 0;
+        openRemainingUsed = false;
+        allowDisarmUsed = false;
+        allowHintsUsed = false;
+        lastClickOnMenu = false;
+        disarmed = 0;
+        hints = 0;
+        paused = false;
+        clockMoving = false;
+        clockActive = false;
+        killLastClock = false;
+        clockCurrent = -1;
+        fuseBurning = false;
+        fuseRemaining = 0;
+        disarmX = 0;
+        disarmY = 0;
+
+        function arrayIndexOf(x, y) {
+            return x + y * (maxX + 1);
+        }
+
+        function imageIndexOf(x, y) {
+            return x + (y + 2) * (maxX + 3) + 27;
+        }
+
+        function checkBounds(x, y) {
+            return (0 <= x && x <= maxX && 0 <= y && y <= maxY);
+        }
+
+        function closeAllMenus() {
+            closeMenu("divMenuHelp");
+            closeMenu("divMenuOpt");
+            closeMenu("divMenuGame");
+        }
+
+        function closeMenu(selectedMenu) {
+            document.getElementById(selectedMenu).style.visibility = "hidden";
+        }
+
+        function openMenu(selectedMenu) {
+            document.getElementById(selectedMenu).style.visibility = "visible";
+        }
+
+        function menuSetOptionChecks(cookieVar, imageLoc) {
+            if (cookieVar) imageLoc.src = checked.src;
+            else imageLoc.src = notchecked.src;
+        }
+
+        function menusSetAllOptionChecks(thisMenu) {
+            if (thisMenu == "divMenuGame") {
+                document.imBeginner.src = notchecked.src;
+                document.imIntermediate.src = notchecked.src;
+                document.imExpert.src = notchecked.src;
+                document.imCustom.src = notchecked.src;
+                if (gameFormat == "Beginner") document.imBeginner.src = checked.src;
+                else if (gameFormat == "Intermediate") document.imIntermediate.src = checked.src;
+                else if (gameFormat == "Expert") document.imExpert.src = checked.src;
+                else document.imCustom.src = checked.src;
+            } else if (thisMenu == "divMenuOpt") {
+                menuSetOptionChecks(useQuestionMarks, document.imMarks);
+                menuSetOptionChecks(useMacroOpen, document.imUseMacro);
+                menuSetOptionChecks(useFirstClickUseful, document.imFirst);
+                menuSetOptionChecks(openRemaining, document.imRemaining);
+                menuSetOptionChecks(allowDisarm, document.imDisarm);
+                menuSetOptionChecks(allowHints, document.imHints);
+            }
+        }
+
+        function menuClick(thisMenu) {
+            visibleTest = document.getElementById(thisMenu).style.visibility == "visible";
+            closeAllMenus();
+            if (!visibleTest) {
+                menusSetAllOptionChecks(thisMenu);
+                openMenu(thisMenu);
+            }
+            lastClickOnMenu = true;
+            return false;
+        }
+
+        function menuMouseOver(currentMenu) {
+            visibleTestGeneral = (document.getElementById("divMenuGame").style.visibility == "visible" || document.getElementById("divMenuOpt").style.visibility == "visible" || document.getElementById("divMenuHelp").style.visibility == "visible");
+            visibleTestSpecific = document.getElementById(currentMenu).style.visibility == "visible";
+            if (visibleTestGeneral && !visibleTestSpecific) {
+                menuClick(currentMenu);
+                lastClickOnMenu = false;
+            }
+            return false;
+        }
+
+        function clickInBrowser() {
+            if (!lastClickOnMenu) {
+                closeMenu("divMenuHelp");
+                closeMenu("divMenuOpt");
+                closeMenu("divMenuGame");
+            }
+            lastClickOnMenu = false;
+        }
+
+        function menuItemClick(thisMsg) {
+            if (thisMsg == "New") faceClick();
+            else if (thisMsg == "Pause") doPause();
+            else if (thisMsg == "Beginner" || thisMsg == "Intermediate" || thisMsg == "Expert") {
+                setCookie("gameFormat", thisMsg);
+                window.location.href = window.location.href;
+            } else if (thisMsg == "Custom") {
+                var e = document.getElementById("window8");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+                document.getElementById("maxY").value = maxY + 1;
+                document.getElementById("maxX").value = maxX + 1;
+                document.getElementById("maxNumBombs").value = maxNumBombs;
+            } else if (thisMsg == "Personal") {
+                var e = document.getElementById("window7");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+                reloadpersonalbest();
+            } else if (thisMsg == "Marks") {
+                useQuestionMarks = !useQuestionMarks;
+                setCookie("useQuestionMarks", useQuestionMarks);
+            } else if (thisMsg == "Area") {
+                useMacroOpen = !useMacroOpen;
+                setCookie("useMacroOpen", useMacroOpen);
+            } else if (thisMsg == "First") {
+                useFirstClickUseful = !useFirstClickUseful;
+                setCookie("useFirstClickUseful", useFirstClickUseful);
+            } else if (thisMsg == "Remaining") {
+                openRemaining = !openRemaining;
+                updateNumBombs();
+                setCookie("openRemaining", openRemaining);
+            } else if (thisMsg == "Disarm") {
+                allowDisarm = !allowDisarm;
+                setCookie("allowDisarm", allowDisarm);
+            } else if (thisMsg == "Hints") {
+                allowHints = !allowHints;
+                setCookie("allowHints", allowHints);
+            } else if (thisMsg == "About") {
+                var e = document.getElementById("window1");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            } else if (thisMsg == "Instructions") {
+                var e = document.getElementById("window2");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            } else if (thisMsg == "Example") {
+                var e = document.getElementById("window3");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            } else if (thisMsg == "History") {
+                var e = document.getElementById("window4");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            } else if (thisMsg == "Languages") {
+                var e = document.getElementById("window5");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            } else if (thisMsg == "OtherGames") {
+                var e = document.getElementById("window6");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+            };
+            closeAllMenus();
+            return false;
+        }
+
+        function hideDisarm() {
+            document.getElementById("divDisarm").style.visibility = "hidden";
+            document.face.src = faceSmile.src;
+        }
+
+        function hidePause() {
+            document.getElementById("divPause").style.visibility = "hidden";
+            paused = false;
+        }
+
+        function clearBoardImages() {
+            for (var j = 0; j <= maxY; j++)
+                for (var i = 0; i <= maxX; i++) with(cellArray[arrayIndexOf(i, j)])
+            document.images[imageIndexOf(i, j)].src = blankCell.src;
+        }
+
+        function clearBoard() {
+            for (var i = 0; i <= maxX; i++)
+                for (var j = 0; j <= maxY; j++) with(cellArray[arrayIndexOf(i, j)]) {
+                    isExposed = false;
+                    isBomb = false;
+                    isFlagged = false;
+                    isMarked = false;
+                    isQuestion = false;
+                    neighborBombs = 0;
+                }
+        }
+
+        function updateClock() {
+            tempClock = clockCurrent;
+            if (tempClock < 0) tempClock = 0;
+            if (tempClock > 999) tempClock = 999;
+            digit = tempClock % 10;
+            document.time1s.src = timeDigits[digit].src;
+            digit = Math.floor(tempClock / 10 % 10);
+            document.time10s.src = timeDigits[digit].src;
+            digit = Math.floor(tempClock / 100);
+            document.time100s.src = timeDigits[digit].src;
+        }
+
+        function clockStop() {
+            clockMoving = false;
+        }
+
+        function clockClear() {
+            clockCurrent = -1;
+            updateClock();
+            clockMoving = false;
+        }
+
+        function updateNumBombs() {
+            var h = maxNumBombs - bombsFlagged;
+            if (!dead && !win && openRemaining && h == 0) {
+                document.bomb1s.src = movesDigits0.src;
+                document.bomb10s.src = movesDigits0.src;
+                document.bomb100s.src = movesDigits0.src;
+            } else {
+                if (h < -99) h = -99;
+                digit = Math.abs(h) % 10;
+                document.bomb1s.src = timeDigits[digit].src;
+                digit = Math.floor(Math.abs(h) / 10 % 10);
+                document.bomb10s.src = timeDigits[digit].src;
+                digit = Math.floor(Math.abs(h) / 100 % 10);
+                document.bomb100s.src = timeDigits[digit].src;
+                if (h < 0) document.bomb100s.src = timeNeg.src;
+            }
+        }
+
+        function addNeighbor(x, y) {
+            if (checkBounds(x, y)) cellArray[arrayIndexOf(x, y)].neighborBombs++;
+        }
+
+        function placeBomb(x, y) {
+            with(cellArray[arrayIndexOf(x, y)]) if (!isBomb && !isExposed) {
+                isBomb = true;
+                for (var i = x - 1; i <= x + 1; i++)
+                    for (var j = y - 1; j <= y + 1; j++) addNeighbor(i, j);
+                return true;
+            } else return false;
+        }
+
+        function placeBombRandomLoc() {
+            bombPlaced = false;
+            while (!bombPlaced) {
+                with(Math) {
+                    i = floor(random() * (maxX + 1));
+                    j = floor(random() * (maxY + 1));
+                }
+                bombPlaced = placeBomb(i, j);
+            }
+        }
+
+        function makeBoard() {
+            clearBoard();
+            bombsFlagged = 0;
+            cellsOpen = 0;
+            updateNumBombs();
+            hints = 0;
+            disarmed = 0;
+            bombsToPlace = maxNumBombs;
+            while (bombsToPlace != 0) {
+                placeBombRandomLoc();
+                bombsToPlace--;
+            }
+        }
+
+        function faceClick_first() {
+            document.face.src = faceWait.src;
+            hideDisarm();
+            hidePause();
+            numMoves = 0;
+            closeAllMenus();
+            clockClear();
+            makeBoard();
+            clearBoardImages();
+            forceFocus();
+            dead = false;
+            win = false;
+            openRemainingUsed = false;
+            allowDisarmUsed = false;
+            allowHintsUsed = false;
+            document.face.src = faceSmile.src;
+            return false;
+        }
+        faceClick_first();
+
+        function showMouseDown(e) {
+            if (!dead && !win) {
+                closeAllMenus();
+                document.face.src = faceOoh.src;
+            }
+        }
+
+        function ignoreDragging() {
+            try {
+                window.event.returnValue = false;
+            } catch (e) {}
+            return false;
+        }
+
+        function removeNeighbor(x, y) {
+            if (checkBounds(x, y)) cellArray[arrayIndexOf(x, y)].neighborBombs--;
+        }
+
+        function removeBomb(x, y) {
+            for (var i = x - 1; i <= x + 1; i++)
+                for (var j = y - 1; j <= y + 1; j++) removeNeighbor(i, j);
+            cellArray[arrayIndexOf(x, y)].isBomb = false;
+        }
+
+        function ticClock() {
+            if (!killLastClock) {
+                if (clockMoving) clockCurrent++;
+                if (clockMoving && clockCurrent < 1000) updateClock();
+                clockActive = clockMoving;
+                if (clockActive) setTimeout(ticClock, 1000);
+            }
+            killLastClock = false;
+        }
+
+        function clockStart() {
+            clockWasActive = clockActive;
+            clockMoving = true;
+            ticClock();
+            if (clockWasActive) killLastClock = true;
+        }
+
+        function firstClick(x, y) {
+            if (!useFirstClickUseful) {
+                if (cellArray[arrayIndexOf(x, y)].isBomb) {
+                    placeBombRandomLoc();
+                    removeBomb(x, y);
+                }
+            } else {
+                var i, j;
+                for (i = x - 1; i <= x + 1; i++)
+                    for (j = y - 1; j <= y + 1; j++)
+                        if (checkBounds(i, j))
+                            cellArray[arrayIndexOf(i, j)].isExposed = true;
+                for (i = x - 1; i <= x + 1; i++)
+                    for (j = y - 1; j <= y + 1; j++)
+                        if (checkBounds(i, j) && cellArray[arrayIndexOf(i, j)].isBomb) {
+                            removeBomb(i, j);
+                            placeBombRandomLoc();
+                        }
+                for (i = x - 1; i <= x + 1; i++)
+                    for (j = y - 1; j <= y + 1; j++)
+                        if (checkBounds(i, j))
+                            cellArray[arrayIndexOf(i, j)].isExposed = false;
+            }
+            clockStart();
+        }
+
+        function constructMarkedCell() {
+            this.x = -1;
+            this.y = -1;
+        }
+
+        function markCellToOpen(x, y) {
+            ++markedCount;
+            if (highestStackHeight < markedCount) {
+                ++highestStackHeight;
+                markedArray[markedCount] = new constructMarkedCell();
+            }
+            markedArray[markedCount].x = x;
+            markedArray[markedCount].y = y;
+            cellArray[arrayIndexOf(x, y)].isMarked = true;
+        }
+
+        function markMatrixToOpen(x, y) {
+            for (var i = x - 1; i <= x + 1; i++)
+                for (var j = y - 1; j <= y + 1; j++)
+                    if (checkBounds(i, j)) with(cellArray[arrayIndexOf(i, j)])
+            if ((!isExposed) && (!isMarked) && (!isFlagged)) markCellToOpen(i, j);
+        }
+
+        function winShowFlags() {
+            for (var i = 0; i <= maxX; i++)
+                for (var j = 0; j <= maxY; j++) with(cellArray[arrayIndexOf(i, j)]) if (!isExposed && !isFlagged) {
+                    isFlagged = true;
+                    document.images[imageIndexOf(i, j)].src = bombFlagged.src;
+                }
+        }
+
+        function deathShowBombs() {
+            for (var i = 0; i <= maxX; i++)
+                for (var j = 0; j <= maxY; j++) with(cellArray[arrayIndexOf(i, j)]) if (!isExposed) {
+                    if (isBomb && !isFlagged) document.images[imageIndexOf(i, j)].src = bombRevealed.src;
+                    else if (!isBomb && isFlagged) document.images[imageIndexOf(i, j)].src = bombMisFlagged.src;
+                }
+        }
+
+        function openCellDeath(x, y) {
+            with(cellArray[arrayIndexOf(x, y)]) {
+                document.images[imageIndexOf(x, y)].src = bombDeath.src;
+                document.face.src = faceDead.src;
+                var e = document.getElementById("window9");
+                var disp = e.style.display;
+                if (disp == "block") e.style.display = "none";
+                isExposed = true;
+                dead = true;
+                updateNumBombs();
+                deathShowBombs();
+            }
+        }
+
+        function winShowWindow() {
+            win = true;
+            setCookie("gameTime", clockCurrent);
+            setCookie("numMoves", numMoves);
+            setCookie("openRemainingUsed", openRemainingUsed);
+            setCookie("allowDisarmUsed", allowDisarmUsed);
+            setCookie("allowHintsUsed", allowHintsUsed);
+            if (hints == 0 && disarmed == 0) {
+                document.face.src = faceWin.src;
+                var e = document.getElementById("window9");
+                var disp = e.style.display;
+                hideallwindows();
+                if (disp == "none") e.style.display = "block";
+                document.getElementById("gameTime").textContent = clockCurrent;
+                var gameTime = clockCurrent;
+                if (gameTime > 999) gameTime = 999;
+                var highTime = parseInt(getCookie(gameFormat), 10);
+                var newRecord = 0;
+                if (gameTime < highTime || isNaN(highTime)) {
+                    newRecord = 1;
+                    highTime = gameTime;
+                    setCookie(gameFormat, highTime);
+                }
+                if (gameFormat == "Custom") document.getElementById("gameFormat2").textContent = "Les paramètres de votre jeu étaient : " + (maxX + 1) + "x" + (maxY + 1) + " avec " + maxNumBombs + " bombes.";
+                else {
+                    var gf;
+                    if (gameFormat == "Beginner") gf = "Débutant ";
+                    if (gameFormat == "Intermediate") gf = "Intermédiaire ";
+                    if (gameFormat == "Expert") gf = "Avancé ";
+                    document.getElementById("gameFormat2").textContent = "Votre meilleur temps " + gf + " est : " + highTime;
+                }
+                document.getElementById("numMoves").textContent = numMoves;
+                if (newRecord && gameFormat != "Custom") document.getElementById("nr").innerText = "Nouveau record !";
+                else document.getElementById("nr").innerText = "";
+            } else {
+                document.face.src = facePirate.src;
+                var e = document.getElementById("window9");
+                var disp = e.style.display;
+                if (disp == "block") e.style.display = "none";
+            }
+        }
+
+        function openCell(x, y) {
+            with(cellArray[arrayIndexOf(x, y)]) if (isBomb) {
+                clockStop();
+                if (allowDisarm) {
+                    showDisarm(); //maxX, maxY);
+                    disarmX = x;
+                    disarmY = y;
+                    markedCount = -1;
+                    for (l = 0; l <= maxCells; l++) cellArray[l].isMarked = false;
+                } else openCellDeath(x, y);
+            } else {
+                document.images[imageIndexOf(x, y)].src = cellOpenIm[neighborBombs].src;
+                isExposed = true;
+                isMarked = false;
+                ++cellsOpen;
+                if (neighborBombs == 0 && !isBomb) markMatrixToOpen(x, y);
+                if (cellsOpen + maxNumBombs - 1 == maxCells) {
+                    clockStop();
+                    winShowFlags();
+                    winShowWindow();
+                }
+            }
+        }
+
+        function openAllMarked() {
+            while (markedCount >= 0) {
+                markedCount--;
+                with(markedArray[markedCount + 1]) openCell(x, y);
+            }
+        }
+
+        function checkFlagged(x, y) {
+            if (checkBounds(x, y)) return cellArray[arrayIndexOf(x, y)].isFlagged ? 1 : 0;
+            return 0;
+        }
+
+        function checkFlaggedMatrix(x, y) {
+            count = 0;
+            for (var i = x - 1; i <= x + 1; i++)
+                for (var j = y - 1; j <= y + 1; j++)
+                    if (i != x || j != y) count += checkFlagged(i, j);
+            return count;
+        }
+
+        function cellClick(x, y, e) {
+            closeAllMenus();
+            if (!dead && !win) {
+                document.face.src = faceSmile.src;
+                numMoves++;
+                if (e.button != 2) {
+                    if (!clockMoving) firstClick(x, y);
+                    with(cellArray[arrayIndexOf(x, y)]) if (isExposed) {
+                        if (useMacroOpen && checkFlaggedMatrix(x, y) == neighborBombs) {
+                            markMatrixToOpen(x, y);
+                            openAllMarked();
+                        }
+                    } else
+                    if (!isFlagged) {
+                        markCellToOpen(x, y);
+                        openAllMarked();
+                    }
+                    if (win) {
+                        bombsFlagged = maxNumBombs;
+                        updateNumBombs();
+                    }
+                } else if (x > -1) with(cellArray[arrayIndexOf(x, y)]) if (!isExposed) {
+                    if (isFlagged) {
+                        bombsFlagged--;
+                        isFlagged = false;
+                        if (!useQuestionMarks) document.images[imageIndexOf(x, y)].src = blankCell.src;
+                        else {
+                            isQuestion = true;
+                            document.images[imageIndexOf(x, y)].src = (bombQuestion.src);
+                        }
+                    } else {
+                        if (isQuestion) {
+                            isQuestion = false;
+                            document.images[imageIndexOf(x, y)].src = blankCell.src;
+                        } else {
+                            isFlagged = true;
+                            ++bombsFlagged;
+                            document.images[imageIndexOf(x, y)].src = bombFlagged.src;
+                        }
+                    }
+                    updateNumBombs();
+                }
+            }
+            forceFocus();
+        }
+
+        function faceClick() {
+            if (fuseBurning) return false;
+            faceClick_first();
+            var e = document.getElementById("window9");
+            var disp = e.style.display;
+            if (disp == "block") e.style.display = "none";
+            return false;
+        }
+        document.onkeydown = checkKeyDown;
+
+        function checkKeyDown(e) {
+            var chr = e.which || e.keyCode;
+            if (chr == 113) faceClick();
+            if (chr == 80) doPause();
+            if (chr == 72) doHint(e);
+        }
+
+        function doHint(e) {
+            if (allowHints && !dead && !win && clockMoving && pointingAtX > -1) with(cellArray[arrayIndexOf(pointingAtX, pointingAtY)]) if ((!isExposed) && (!isFlagged) && (!isQuestion) && (!isMarked)) {
+                if (isBomb) document.images[imageIndexOf(pointingAtX, pointingAtY)].src = bombShadow.src;
+                else if (neighborBombs == 0) cellClick(pointingAtX, pointingAtY, e);
+                else document.images[imageIndexOf(pointingAtX, pointingAtY)].src = cellShadowIm[neighborBombs].src;
+                hints++;
+            }
+        }
+
+        function doUnpause() {
+            if (!dead && !win && !clockMoving && paused) {
+                document.face.src = faceSmile.src;
+                hidePause();
+                clockStart();
+            }
+        }
+
+        function doPause() {
+            if (!dead && !win && clockMoving && !paused) {
+                paused = true;
+                clockStop();
+                with(document.getElementById("divPause").style) {
+                    left = "7px";
+                    top = "67px";
+                    width = 16 * (maxX + 1) + "px";
+                    height = 16 * (maxY + 1) + "px";
+                    visibility = "visible";
+                }
+                document.face.src = faceWait.src;
+            } else doUnpause();
+        }
+
+        function fuseStop() {
+            hideDisarm();
+            fuseBurning = false;
+        }
+
+        function acceptFate() {
+            fuseStop();
+            openCellDeath(disarmX, disarmY);
+        }
+
+        function ticFuse() {
+            if (fuseBurning) {
+                if (fuseRemaining <= 0) {
+                    if (!clockMoving) acceptFate();
+                } else {
+                    let d1 = Math.floor(fuseRemaining / 10);
+                    let d2 = fuseRemaining % 10;
+                    document.getElementById("detonateCountdown").innerHTML = d1 + "." + d2;
+                    setTimeout("ticFuse()", 100);
+                }
+                fuseRemaining--;
+            }
+        }
+
+        function disarmMine() {
+            fuseStop();
+            ++disarmed;
+            ++bombsFlagged;
+            updateNumBombs();
+            with(cellArray[arrayIndexOf(disarmX, disarmY)]) {
+                isFlagged = true;
+                isDisarmed = true;
+                isExposed = true;
+            }
+            document.images[imageIndexOf(disarmX, disarmY)].src = bombDisarmed.src;
+            clockStart();
+        }
+
+        function showDisarm() {
+            with(document.getElementById("divDisarm").style) {
+                left = "7px";
+                top = "67px";
+                width = 16 * (maxX + 1) + "px";
+                height = 16 * (maxY + 1) + "px";
+                visibility = "visible";
+                fuseRemaining = 30;
+                fuseBurning = true;
+                ticFuse();
+                document.face.src = faceOoh.src;
+            }
+        }
+
+        function zoomDoTransform() {
+            var elem = document.getElementById("gamediv");
+            elem.style.transform = "scale(" + zoomPower() + ")";
+            setCookie("zoomLevel", zoomLevel);
+            var elem2 = document.getElementById("container");
+            elem2.style.width = gwidth() + "px";
+            elem2.style.height = gheight() + "px";
+            rsz();
+        }
+
+        function zoomIn() {
+            if (zoomLevel < 12) {
+                zoomLevel++;
+                zoomDoTransform();
+            }
+        }
+
+        function zoomOut() {
+            if (zoomLevel > -2) {
+                zoomLevel--;
+                zoomDoTransform();
+            }
+        }
+
+        function rsz() {
+            var dim1 = document.getElementById("container").getBoundingClientRect();
+            var dim2 = document.getElementById("content").getBoundingClientRect();
+            var rt = document.body.scrollWidth - Math.min(dim1.left, dim2.left) + 10;
+            var tp = dim1.top;
+            var lt = Math.max(dim1.right, dim2.right) + 10;
+            with(document.getElementById("leftpane").style) {
+                top = tp + "px";
+                right = rt + "px";
+            }
+            with(document.getElementById("rightpane").style) {
+                top = tp + "px";
+                left = lt + "px";
+            }
+        }
+        window.onresize = rsz;
+
+        function cellTouch() {
+            if (pointingAtX > -1) {
+                if (cellArray[arrayIndexOf(pointingAtX, pointingAtY)].isExposed) cellClick(pointingAtX, pointingAtY, 1);
+                else {
+                    if (!clockMoving) cellClick(pointingAtX, pointingAtY, 1);
+                    else cellClick(pointingAtX, pointingAtY, 2);
+                }
+            }
+        }
+
+        function openAll() {
+            allOK = true;
+            for (var i = 0; i <= maxX; i++)
+                for (var j = 0; j <= maxY; j++) with(cellArray[arrayIndexOf(i, j)]) if (!isExposed) {
+                    if (isBomb && !isFlagged) {
+                        document.images[imageIndexOf(i, j)].src = bombDeath.src;
+                        allOK = false;
+                    } else if (!isBomb && isFlagged) document.images[imageIndexOf(i, j)].src = bombMisFlagged.src;
+                    else if (!isBomb) document.images[imageIndexOf(i, j)].src = cellOpenIm[neighborBombs].src;
+                }
+            return allOK;
+        }
+
+        function bombCountClick() {
+            closeAllMenus();
+            if (!dead && !win && openRemaining && maxNumBombs == bombsFlagged) {
+                clockStop();
+                numMoves++;
+                openRemainingUsed = true;
+                if (openAll()) {
+                    winShowWindow();
+                    updateNumBombs();
+                } else {
+                    dead = true;
+                    updateNumBombs();
+                    document.face.src = faceDead.src;
+                }
+            }
+            forceFocus();
+            return false;
+        }
+
+        function launchGame() {
+            n_maxX = document.getElementById("maxX").value;
+            n_maxY = document.getElementById("maxY").value;
+            n_maxNumBombs = document.getElementById("maxNumBombs").value;
+            maxLegalBombs = Math.round(n_maxX * n_maxY / 3);
+            if (isNaN(n_maxX) || n_maxX < 8 || n_maxX > 32 || isNaN(n_maxY) || n_maxY < 8 || n_maxY > 24 || isNaN(n_maxNumBombs) || n_maxNumBombs < 1 || n_maxNumBombs > maxLegalBombs) alert("Vos dimensions de Démineur ne sont pas valides :\n\tLargeur : de 8 à 32\n\tHauteur : de 8 à 24\n\tBombes : 1 à 1/3 des cellules");
+            else {
+                setCookie("gameFormat", "Custom");
+                maxX = n_maxX - 1;
+                maxY = n_maxY - 1;
+                maxNumBombs = n_maxNumBombs;
+                setCookie("maxX", maxX);
+                setCookie("maxY", maxY);
+                setCookie("maxNumBombs", maxNumBombs);
+                window.location.href = window.location.href;
+            }
+        }
+
+        function reloadpersonalbest() {
+            var bestBeginner = parseInt(getCookie("Beginner"), 10);
+            if (isNaN(bestBeginner)) bestBeginner = 999;
+            var bestIntermediate = parseInt(getCookie("Intermediate"), 10);
+            if (isNaN(bestIntermediate)) bestIntermediate = 999;
+            var bestExpert = parseInt(getCookie("Expert"), 10);
+            if (isNaN(bestExpert)) bestExpert = 999;
+            document.getElementById("bestBeginner").textContent = bestBeginner;
+            document.getElementById("bestIntermediate").textContent = bestIntermediate;
+            document.getElementById("bestExpert").textContent = bestExpert;
+        }
+
+        function scoresReset() {
+            setCookie("Beginner", 999);
+            setCookie("Intermediate", 999);
+            setCookie("Expert", 999);
+            reloadpersonalbest();
+        }
+    </script>
+</body>
+
+</html>

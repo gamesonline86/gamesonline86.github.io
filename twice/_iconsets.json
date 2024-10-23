@@ -1,0 +1,17 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "animals": 1,
+        "art": 0,
+        "candies": 0,
+        "cars": 0,
+        "emojis": 0,
+        "fantasy": 0,
+        "food": 0,
+        "music": 0,
+        "people": 0,
+        "space": 0,
+        "sports": 0,
+        "tropical": 0
+    }
+}
